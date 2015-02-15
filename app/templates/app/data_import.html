@@ -1,0 +1,10 @@
+﻿{% extends 'admin/base_site.html' %}
+
+Hello
+
+<form id="importform" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="File">Select file: </label>
+    <input type="file" name="fileToUpload" id="fileToUpload" value="{{ file }}">
+    <input type="submit" value="Upload csv data" name="submit">
+</form>

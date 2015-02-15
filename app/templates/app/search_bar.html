@@ -1,0 +1,16 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="query">Address: </label>
+    {{ form.query }}
+    <input type="submit" value="Search">
+</form>
+
+{% for location in locations %}
+  <p>{{ location }}</p>
+{% endfor %}
+
+{% endblock %}
