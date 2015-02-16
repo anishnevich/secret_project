@@ -10,7 +10,7 @@ from django.utils.translation import ugettext_lazy as _
 
 class SearchForm(forms.Form):
     query = forms.CharField(label='Query', max_length=200)
-    title = forms.CharField(label='Title', max_length=200, widget=forms.TextInput(attrs={"onkeyup" : "searchOpen()"}))
+    title = forms.CharField(label='Title', max_length=200, widget=forms.TextInput(attrs={"onkeyup" : "searchOpen()"}), required=False)
 
 class BootstrapAuthenticationForm(AuthenticationForm):
     """Authentication form which uses boostrap CSS."""

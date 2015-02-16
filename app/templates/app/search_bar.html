@@ -2,6 +2,12 @@
 
 {% block content %}
 
+<style>
+#id_query {
+    width: 50%;
+}
+</style>
+
 <form action="" method="post">
     {% csrf_token %}
     <label for="query">Address: </label>
@@ -39,6 +45,8 @@ function searchResult(data) {
 }
 
 searchOpen();
+
+$("#id_query").geocomplete();
 
 </script>
 
