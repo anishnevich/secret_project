@@ -4,13 +4,12 @@ Definition of forms.
 
 from django import forms
 from app.models import MovieLocation
-import autocomplete_light
 
 from django.contrib.auth.forms import AuthenticationForm
 from django.utils.translation import ugettext_lazy as _
 
 class SearchForm(forms.Form):
-    query = forms.CharField(label='Query', max_length=200, widget=autocomplete_light.TextWidget('MovieLocationAutocomplete'))
+    query = forms.CharField(label='Query', max_length=200, widget=forms.TextInput(attrs={"onkeyup" : "searchOpen()"}))
 
 class BootstrapAuthenticationForm(AuthenticationForm):
     """Authentication form which uses boostrap CSS."""
@@ -22,7 +21,6 @@ class BootstrapAuthenticationForm(AuthenticationForm):
                                widget=forms.PasswordInput({
                                    'class': 'form-control',
                                    'placeholder':'Password'}))
-
 
 class DataInput(forms.Form):
     file = forms.FileField()
@@ -36,3 +34,4 @@ class DataInput(forms.Form):
             l.release_year = 2011
             l.locations = "here"
             l.save()
+

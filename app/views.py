@@ -10,9 +10,7 @@ from datetime import datetime
 from app.models import MovieLocation
 from django.contrib.admin.views.decorators import staff_member_required
 from app import datamanager
-import autocomplete_light
-autocomplete_light.autodiscover()
-
+import json
 
 @staff_member_required
 def data_import(request):
@@ -27,6 +25,14 @@ def data_import(request):
         form = DataInput()        
         context = {"form": form}
         return render(request, "app/data_import.html", context) 
+
+def autocompleteModel(request):
+    search_qs = MovieLocation.objects.filter(title__startswith=request.REQUEST['search'])
+    results = set()
+    for r in search_qs:
+        results.add(r.title)
+    resp = request.REQUEST['callback'] + '(' + json.dumps(list(results)) + ');'
+    return HttpResponse(resp, content_type='application/json')
 
     
 def index(request):

@@ -13,4 +13,31 @@
   <p>{{ location }}</p>
 {% endfor %}
 
+<script>
+
+function searchOpen() {
+    var search = $('#id_query').val()
+    var data = {
+        search: search
+    };
+    $.ajax({
+        url: '/search.json',
+        data: data,
+        dataType: 'jsonp',
+        jsonp: 'callback',
+        jsonpCallback: 'searchResult'
+    });
+}
+
+
+function searchResult(data) {
+    $("#id_query").autocomplete({
+        source: data
+    });
+}
+
+searchOpen();
+
+</script>
+
 {% endblock %}
