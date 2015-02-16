@@ -6,6 +6,8 @@
     {% csrf_token %}
     <label for="query">Address: </label>
     {{ form.query }}
+    <label for="title">Title: </label>
+    {{ form.title }}
     <input type="submit" value="Search">
 </form>
 
@@ -16,7 +18,7 @@
 <script>
 
 function searchOpen() {
-    var search = $('#id_query').val()
+    var search = $('#id_title').val()
     var data = {
         search: search
     };
@@ -31,7 +33,7 @@ function searchOpen() {
 
 
 function searchResult(data) {
-    $("#id_query").autocomplete({
+    $("#id_title").autocomplete({
         source: data
     });
 }
