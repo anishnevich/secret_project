@@ -35,7 +35,7 @@ def autocompleteModel(request):
     return HttpResponse(resp, content_type='application/json')
 
     
-def index(request):
+def address_search(request):
     assert isinstance(request, HttpRequest)
     form = SearchForm()
     if request.method == 'POST':
@@ -57,34 +57,6 @@ def index(request):
     
     return render(request, 'app/search_bar.html', {'form': form} )
 
-    
-def home(request):
-    """Renders the home page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/index.html',
-        context_instance = RequestContext(request,
-        {
-            'title':'Home Page',
-            'year':datetime.now().year,
-        })
-    )
-
-def contact(request):
-    """Renders the contact page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/contact.html',
-        context_instance = RequestContext(request,
-        {
-            'title':'Contact',
-            'message':'Your contact page.',
-            'year':datetime.now().year,
-        })
-    )
-
 def about(request):
     """Renders the about page."""
     assert isinstance(request, HttpRequest)
@@ -94,7 +66,7 @@ def about(request):
         context_instance = RequestContext(request,
         {
             'title':'About',
-            'message':'Your application description page.',
+            'message':'Here is a service that shows on a map where movies have been filmed in San Francisco.',
             'year':datetime.now().year,
         })
     )
