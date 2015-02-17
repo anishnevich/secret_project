@@ -35,11 +35,10 @@ class MovieLocationSearchResult:
 class SearchSettings:
     DEFAULT_SEARCH_QUERY = ".*"
 
-    def __init__(self, query_location = '', distance = 3, title = '', release_year = '', production_company = '', distributor = '', director = '', writer = '', actor = ''):
-        self.query_location = query_location if query_location != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+    def __init__(self, query_location = '', distance = '', title = '', release_year = '', production_company = '', distributor = '', director = '', writer = '', actor = ''):
+        self.query_location = query_location
         self.distance = distance
         self.title = "^" + title if title != '' else SearchSettings.DEFAULT_SEARCH_QUERY
-        self.distance = distance if distance != '' else SearchSettings.DEFAULT_SEARCH_QUERY
         self.release_year = release_year if release_year != '' else SearchSettings.DEFAULT_SEARCH_QUERY
         self.production_company = production_company if production_company != '' else SearchSettings.DEFAULT_SEARCH_QUERY
         self.distributor = distributor if distributor != '' else SearchSettings.DEFAULT_SEARCH_QUERY
