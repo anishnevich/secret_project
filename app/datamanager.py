@@ -1,4 +1,4 @@
-from app.models import MovieLocation, MovieLocationSearchResult
+from app.models import MovieLocation, MovieLocationSearchResult, SearchSettings
 from django.db import models
 from pygeocoder import Geocoder
 from geopy.distance import vincenty
@@ -16,11 +16,14 @@ class datamanager(object):
         coordinates2 = (location.latitude, location.longitude)
         return great_circle(query_coordinates, coordinates2).miles
 
-    def get_filtered_locations(self, query_location, distance = 3, title = "*", release_year = "*", production_company = "*", distributor = "*", director = "*", writer = "*", actor = "*"):
-        query_coordinates = self.get_coordinates(query_location)
+    def get_filtered_locations(self, search_settings):
+        query_coordinates = self.get_coordinates(search_settings.query_location)
         all_locations = MovieLocation.objects.all()
 
+        all_locations = filter(lambda l: re.match(search_settings.title, l.title), all_locations)
+
         locations_with_distance = map(lambda l: MovieLocationSearchResult(l, self.get_distance(query_coordinates, l)), all_locations)
-        filtered_locations = filter(lambda l: l.distance <= distance, locations_with_distance)
+        filtered_locations = filter(lambda l: l.distance <= float(search_settings.distance), locations_with_distance)
         #title = re.compile('[a-z]+')
+
         return filtered_locations

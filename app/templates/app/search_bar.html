@@ -12,6 +12,8 @@
     {% csrf_token %}
     <label for="query">Address: </label>
     {{ form.query }}
+    <label for="title">Max distance: </label>
+    {{ form.distance }}
     <label for="title">Title: </label>
     {{ form.title }}
     <input type="submit" value="Search">

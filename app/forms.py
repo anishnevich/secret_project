@@ -10,6 +10,7 @@ from django.utils.translation import ugettext_lazy as _
 
 class SearchForm(forms.Form):
     query = forms.CharField(label='Query', max_length=200)
+    distance = forms.IntegerField(label='Distance', max_value=200)
     title = forms.CharField(label='Title', max_length=200, widget=forms.TextInput(attrs={"onkeyup" : "searchOpen()"}), required=False)
 
 class BootstrapAuthenticationForm(AuthenticationForm):

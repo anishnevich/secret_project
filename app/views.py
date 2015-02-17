@@ -7,7 +7,7 @@ from app.forms import SearchForm, DataInput
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from datetime import datetime
-from app.models import MovieLocation
+from app.models import MovieLocation, SearchSettings
 from django.contrib.admin.views.decorators import staff_member_required
 from app import datamanager
 import json
@@ -42,9 +42,9 @@ def index(request):
         form = SearchForm(request.POST)
         # check whether it's valid:
         if (form.is_valid()):
-            query = form.data['query']
+            search_settings = SearchSettings.fromform(form)
             m = datamanager.datamanager()
-            locations = m.get_filtered_locations(query)            
+            locations = m.get_filtered_locations(search_settings)            
             return render(
                 request, 
                 'app/search_bar.html', 
