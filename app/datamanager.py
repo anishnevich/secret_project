@@ -21,6 +21,7 @@ class datamanager(object):
         all_locations = MovieLocation.objects.all()
 
         all_locations = filter(lambda l: re.match(search_settings.title, l.title), all_locations)
+        all_locations = filter(lambda l: re.match(search_settings.release_year, str(l.release_year)), all_locations)
 
         locations_with_distance = map(lambda l: MovieLocationSearchResult(l, self.get_distance(query_coordinates, l)), all_locations)
         filtered_locations = filter(lambda l: l.distance <= float(search_settings.distance), locations_with_distance)

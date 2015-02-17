@@ -38,7 +38,7 @@ class SearchSettings:
     def __init__(self, query_location = '', distance = 3, title = '', release_year = '', production_company = '', distributor = '', director = '', writer = '', actor = ''):
         self.query_location = query_location if query_location != '' else SearchSettings.DEFAULT_SEARCH_QUERY
         self.distance = distance
-        self.title = title if title != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+        self.title = "^" + title if title != '' else SearchSettings.DEFAULT_SEARCH_QUERY
         self.distance = distance if distance != '' else SearchSettings.DEFAULT_SEARCH_QUERY
         self.release_year = release_year if release_year != '' else SearchSettings.DEFAULT_SEARCH_QUERY
         self.production_company = production_company if production_company != '' else SearchSettings.DEFAULT_SEARCH_QUERY
@@ -50,8 +50,8 @@ class SearchSettings:
         query = form.data['query']
         distance = form.data['distance']
         title = form.data['title']
-        #release_year = form.data['year']
+        release_year = form.data['year']
         #self.production_company = production_company
         #self.distributor = distributor
         #self.director = director
-        return cls(query, distance, title)
+        return cls(query, distance, title, release_year)

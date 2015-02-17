@@ -4,7 +4,7 @@
 
 <style>
 #id_query {
-    width: 50%;
+    width: 100%;
 }
 </style>
 
@@ -12,10 +12,12 @@
     {% csrf_token %}
     <label for="query">Address: </label>
     {{ form.query }}
-    <label for="title">Max distance: </label>
+    <label for="distance">Max distance: </label>
     {{ form.distance }}
     <label for="title">Title: </label>
     {{ form.title }}
+    <label for="year">Release year: </label>
+    {{ form.year }}
     <input type="submit" value="Search">
 </form>
 

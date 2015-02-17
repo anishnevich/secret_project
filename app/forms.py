@@ -12,6 +12,7 @@ class SearchForm(forms.Form):
     query = forms.CharField(label='Query', max_length=200, error_messages = {'required': "Address is required."})
     distance = forms.IntegerField(label='Distance', max_value=200, error_messages = {'required': "Max distance is required."})
     title = forms.CharField(label='Title', max_length=200, widget=forms.TextInput(attrs={"onkeyup" : "searchOpen()"}), required=False)
+    year = forms.IntegerField(label='Year', max_value=2020, min_value=1880, widget=forms.TextInput(attrs={"onkeyup" : "searchOpen()"}), required=False, error_messages = {'min_value': "Cinematography was only invented in 1880's."})
 
 class BootstrapAuthenticationForm(AuthenticationForm):
     """Authentication form which uses boostrap CSS."""
