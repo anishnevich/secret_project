@@ -37,6 +37,7 @@ def autocompleteModel(request):
     
 def index(request):
     assert isinstance(request, HttpRequest)
+    form = SearchForm()
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
         form = SearchForm(request.POST)
@@ -53,7 +54,7 @@ def index(request):
                      #'address': query,
                     'locations': [str(location) for location in locations], 
                 })
-    form = SearchForm()
+    
     return render(request, 'app/search_bar.html', {'form': form} )
 
     

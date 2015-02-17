@@ -9,8 +9,8 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.utils.translation import ugettext_lazy as _
 
 class SearchForm(forms.Form):
-    query = forms.CharField(label='Query', max_length=200)
-    distance = forms.IntegerField(label='Distance', max_value=200)
+    query = forms.CharField(label='Query', max_length=200, error_messages = {'required': "Address is required."})
+    distance = forms.IntegerField(label='Distance', max_value=200, error_messages = {'required': "Max distance is required."})
     title = forms.CharField(label='Title', max_length=200, widget=forms.TextInput(attrs={"onkeyup" : "searchOpen()"}), required=False)
 
 class BootstrapAuthenticationForm(AuthenticationForm):
