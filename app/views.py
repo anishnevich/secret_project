@@ -27,11 +27,15 @@ def data_import(request):
         return render(request, "app/data_import.html", context) 
 
 def autocompleteModel(request):
-    search_qs = MovieLocation.objects.filter(title__startswith=request.REQUEST['search'])
+    field = request.REQUEST['field']
+    kwargs = {    
+        '{0}__{1}'.format(field, 'startswith'): request.REQUEST['search'],    
+    }
+    search_qs = MovieLocation.objects.filter(**kwargs)
     results = set()
     for r in search_qs:
         results.add(r.title)
-    resp = request.REQUEST['callback'] + '(' + json.dumps(list(results)) + ');'
+    resp = json.dumps(list(results))
     return HttpResponse(resp, content_type='application/json')
 
     

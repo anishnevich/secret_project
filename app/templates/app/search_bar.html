@@ -18,6 +18,8 @@
     {{ form.title }}
     <label for="year">Release year: </label>
     {{ form.year }}
+    <label for="production_company">Production Company: </label>
+    {{ form.production_company }}
     <input type="submit" value="Search">
 </form>
 
@@ -42,28 +44,26 @@
 
 <script>
 
-function searchOpen() {
-    var search = $('#id_title').val()
+function searchOpen(field) {
+    var search = $('#id_' + field).val()
     var data = {
-        search: search
+        search: search,
+        field: field
     };
     $.ajax({
         url: '/search.json',
         data: data,
-        dataType: 'jsonp',
-        jsonp: 'callback',
-        jsonpCallback: 'searchResult'
+    }).done(function (data) {
+        searchResult(data, field);
     });
 }
 
 
-function searchResult(data) {
-    $("#id_title").autocomplete({
+function searchResult(data, field) {
+    $('#id_' + field).autocomplete({
         source: data
     });
 }
-
-searchOpen();
 
 $("#id_query").geocomplete();
 
