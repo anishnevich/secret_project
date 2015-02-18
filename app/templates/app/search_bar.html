@@ -6,6 +6,7 @@
 #id_query {
     width: 100%;
 }
+#map-canvas { width: 100%; height: 100%; padding: 0; }
 </style>
 
 <form action="" method="post">
@@ -42,6 +43,10 @@
     {% endfor %}
 {% endif %}
 
+<div id="map-canvas">
+    <!-- map loads here... -->
+</div>
+
 <script>
 
 function searchOpen(field) {
@@ -66,6 +71,32 @@ function searchResult(data, field) {
 }
 
 $("#id_query").geocomplete();
+
+function displayMap() {
+    document.getElementById('map-canvas').style.display = "block";
+    initialize();
+}
+function initialize() {
+    // create the map
+
+    var myOptions = {
+        zoom: 13,
+        center: new google.maps.LatLng(37.76893497, -122.42284884),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    map = new google.maps.Map(document.getElementById("map-canvas"),
+                                myOptions);
+
+    {% for location in locations %}
+        new google.maps.Marker({
+            position: new google.maps.LatLng({{ location.latitude }}, {{ location.longitude }}),
+            map: map,
+            title: "{{ location.title }}"
+        });
+    {% endfor %}
+}
+
+displayMap();
 
 </script>
 

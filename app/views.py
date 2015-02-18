@@ -59,7 +59,8 @@ def address_search(request):
                 {
                     'form': form,
                         #'address': query,
-                    'locations': [str(location) for location in locations], 
+                    #'locations': [str(location) for location in locations], 
+                    'locations': locations,
                 })
             
     return render(request, 'app/search_bar.html', {'form': form} )

@@ -4,6 +4,7 @@ from pygeocoder import Geocoder
 from geopy.distance import vincenty
 from geopy.distance import great_circle
 import re
+from operator import attrgetter
 
 class datamanager(object):
     """description of class"""
@@ -25,6 +26,8 @@ class datamanager(object):
         if search_settings.query_location != '' or search_settings.distance != '':
             query_coordinates = self.get_coordinates(search_settings.query_location)
             locations_with_distance = map(lambda l: MovieLocationSearchResult(l, self.get_distance(query_coordinates, l)), filtered_locations)
-            filtered_locations = filter(lambda l: l.distance <= float(search_settings.distance), locations_with_distance)        
+            filtered_locations = list(filter(lambda l: l.distance <= float(search_settings.distance), locations_with_distance))
+            filtered_locations.sort(key = lambda l: l.distance)
+            filtered_locations = map(lambda l: l.movie_location, filtered_locations)
 
-        return filtered_locations
+        return list(filtered_locations)[:10]
