@@ -30,7 +30,7 @@ class ViewTest(TestCase):
     def test_search_by_title(self):
         """Tests search by title."""
         response = self.client.post('/', {'query': '','distance': '','year': '', 'title': 'Need For Speed'})
-        self.assertContains(response, 'Need For Speed', count=5, status_code=200)
+        self.assertContains(response, 'Need For Speed', count=9, status_code=200)
 
     def test_title_autocompletion(self):
         """Tests autocompletion for title."""
