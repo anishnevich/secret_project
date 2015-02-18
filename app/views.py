@@ -34,7 +34,7 @@ def autocompleteModel(request):
     search_qs = MovieLocation.objects.filter(**kwargs)
     results = set()
     for r in search_qs:
-        results.add(r.title)
+        results.add(getattr(r, field))
     resp = json.dumps(list(results))
     return HttpResponse(resp, content_type='application/json')
 
