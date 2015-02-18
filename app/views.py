@@ -47,7 +47,10 @@ def address_search(request):
         form = SearchForm(request.POST)
         # check whether it's valid:
         if (form.is_valid()):
-            search_settings = SearchSettings.fromform(form)
+            try:
+                search_settings = SearchSettings.fromform(form)
+            except:
+                return HttpResponse('Bad search form', status=400)
             m = datamanager.datamanager()
             locations = m.get_filtered_locations(search_settings)            
             return render(
@@ -55,10 +58,10 @@ def address_search(request):
                 'app/search_bar.html', 
                 {
                     'form': form,
-                     #'address': query,
+                        #'address': query,
                     'locations': [str(location) for location in locations], 
                 })
-    
+            
     return render(request, 'app/search_bar.html', {'form': form} )
 
 def about(request):

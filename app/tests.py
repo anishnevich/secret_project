@@ -17,19 +17,25 @@ class ViewTest(TestCase):
         def setUpClass(cls):
             django.setup()
 
-    def test_home(self):
-        """Tests the home page."""
-        response = self.client.get('/')
-        self.assertContains(response, 'Home Page', 1, 200)
-
-    def test_contact(self):
-        """Tests the contact page."""
-        response = self.client.get('/contact')
-        self.assertContains(response, 'Contact', 3, 200)
-
     def test_about(self):
         """Tests the about page."""
         response = self.client.get('/about')
         self.assertContains(response, 'SF Movies', 3, 200)
 
-    #def test_
+    def test_search_misformed_post(self):
+        """Tests search with empty POST request"""
+        response = self.client.post('/', {})
+        self.assertEqual(response.status_code, 400)
+
+    def test_search_by_title(self):
+        """Tests search by title."""
+        response = self.client.post('/', {'query': '','distance': '','year': '', 'title': 'Need For Speed'})
+        self.assertContains(response, 'Need For Speed', count=5, status_code=200)
+
+    def test_title_autocompletion(self):
+        """Tests autocompletion for title."""
+        response = self.client.post('/search.json/', {'field': 'title', 'search' : 'Need'})
+        self.assertContains(response, 'Need For Speed', count=1, status_code=200)
+        response = self.client.post('/search.json/', {'field': 'title', 'search' : 'Sis'})
+        self.assertContains(response, 'Sister Act', count=2, status_code=200)
+
