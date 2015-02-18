@@ -52,7 +52,9 @@ def address_search(request):
             except:
                 return HttpResponse('Bad search form', status=400)
             m = datamanager.datamanager()
-            locations = m.get_filtered_locations(search_settings)            
+            locations = m.get_filtered_locations(search_settings)   
+            if not locations:
+                form.errors['__all__'] = form.error_class(["No locations found"])
             return render(
                 request, 
                 'app/search_bar.html', 

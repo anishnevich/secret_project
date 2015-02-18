@@ -1,0 +1,52 @@
+﻿<script>
+    function searchOpen(field) {
+        var search = $('#id_' + field).val()
+        var data = {
+            search: search,
+            field: field
+        };
+        $.ajax({
+            url: '/search.json',
+            data: data,
+        }).done(function (data) {
+            searchResult(data, field);
+        });
+    }
+
+
+    function searchResult(data, field) {
+        $('#id_' + field).autocomplete({
+            source: data
+        });
+    }
+
+    $("#id_query").geocomplete();
+
+    function displayMap() {
+        document.getElementById('map-canvas').style.display = "block";
+        initialize();
+    }
+    function initialize() {
+        // create the map
+
+        var myOptions = {
+            zoom: 13,
+            center: new google.maps.LatLng(37.76893497, -122.42284884),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map = new google.maps.Map(document.getElementById("map-canvas"),
+                                    myOptions);
+        var position;
+        {% for location in locations %}
+        position = new google.maps.LatLng({{ location.latitude }}, {{ location.longitude }})
+        new google.maps.Marker({
+            position: position,
+            map: map,
+            title: "{{ location.title }}"
+        });
+        map.center = position
+        {% endfor %}
+    }
+
+    displayMap();
+</script>
