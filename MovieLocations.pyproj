@@ -38,6 +38,9 @@
     <Compile Include="app\datamanager.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="app\search_helper.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\tests.py" />
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />

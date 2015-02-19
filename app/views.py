@@ -7,9 +7,9 @@ from app.forms import SearchForm, DataInput
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from datetime import datetime
-from app.models import MovieLocation, SearchSettings
+from app.models import SearchSettings
 from django.contrib.admin.views.decorators import staff_member_required
-from app import datamanager
+from app import search_helper
 import json
 
 @staff_member_required
@@ -31,7 +31,9 @@ def autocompleteModel(request):
     kwargs = {    
         '{0}__{1}'.format(field, 'startswith'): request.REQUEST['search'],    
     }
-    search_qs = MovieLocation.objects.filter(**kwargs)
+
+    searcher = search_helper.search_helper()
+    search_qs = searcher.filter_by_not_address_filed(kwargs)
     results = set()
     for r in search_qs:
         results.add(getattr(r, field))
@@ -51,7 +53,7 @@ def address_search(request):
                 search_settings = SearchSettings.fromform(form)
             except:
                 return HttpResponse('Bad search form', status=400)
-            m = datamanager.datamanager()
+            m = search_helper.search_helper()
             locations = m.get_filtered_locations(search_settings)   
             if not locations:
                 form.errors['__all__'] = form.error_class(["No locations found"])

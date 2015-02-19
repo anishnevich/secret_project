@@ -38,11 +38,20 @@ class SearchSettings:
     def __init__(self, query_location = '', distance = '', title = '', release_year = '', production_company = '', distributor = '', director = '', writer = '', actor = ''):
         self.query_location = query_location
         self.distance = distance
-        self.title = "^" + title if title != '' else SearchSettings.DEFAULT_SEARCH_QUERY
-        self.release_year = release_year if release_year != '' else SearchSettings.DEFAULT_SEARCH_QUERY
-        self.production_company = production_company if production_company != '' else SearchSettings.DEFAULT_SEARCH_QUERY
-        self.distributor = distributor if distributor != '' else SearchSettings.DEFAULT_SEARCH_QUERY
-        self.director = director if director != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+        #self.title = "^" + title if title != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+        #self.release_year = release_year if release_year != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+        #self.production_company = production_company if production_company != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+        #self.distributor = distributor if distributor != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+        #self.director = director if director != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+        #self.writer = writer if writer != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+        self.search_args = {            
+            '{0}__{1}'.format('title', 'regex'): "^" + title if title != '' else SearchSettings.DEFAULT_SEARCH_QUERY, 
+            '{0}__{1}'.format('release_year', 'regex'):  release_year if release_year != '' else SearchSettings.DEFAULT_SEARCH_QUERY, 
+            '{0}__{1}'.format('production_company', 'regex'): production_company if production_company != '' else SearchSettings.DEFAULT_SEARCH_QUERY,
+            '{0}__{1}'.format('distributor', 'regex'): distributor if distributor != '' else SearchSettings.DEFAULT_SEARCH_QUERY,
+            '{0}__{1}'.format('director', 'regex'): director if director != '' else SearchSettings.DEFAULT_SEARCH_QUERY,
+            '{0}__{1}'.format('writer', 'regex'):  writer if writer != '' else SearchSettings.DEFAULT_SEARCH_QUERY
+        }
 
     @classmethod
     def fromform(cls, form):
@@ -50,7 +59,8 @@ class SearchSettings:
         distance = form.data['distance']
         title = form.data['title']
         release_year = form.data['year']
-        #self.production_company = production_company
-        #self.distributor = distributor
-        #self.director = director
-        return cls(query, distance, title, release_year)
+        production_company = form.data['production_company']
+        distributor = form.data['distributor']
+        director = form.data['director']
+        writer = form.data['writer']
+        return cls(query, distance, title, release_year, production_company, distributor, director, writer)
