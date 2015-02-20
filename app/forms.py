@@ -9,6 +9,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.utils.translation import ugettext_lazy as _
 
 class SearchForm(forms.Form):
+    """Form for all search fields."""
     query              = forms.CharField(label='Query', max_length=200, required=False)
     distance           = forms.FloatField(label='Distance', max_value=200, required=False, initial=3)
     title              = forms.CharField(label='Title', max_length=200, widget=forms.TextInput(attrs={"onkeyup" : "searchOpen('title')"}), required=False)

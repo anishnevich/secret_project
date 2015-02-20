@@ -25,6 +25,17 @@ class ViewTest(TestCase):
 class SearchFormTest(TestCase):
     """Tests for the search."""
 
+    EMPTY_SEARCH_QUERY = {
+        'query': '',
+        'distance': '',
+        'year': '',
+        'title': '', 
+        'production_company':'',
+        'distributor':'',
+        'director':'',
+        'writer':''
+    }
+
     if django.VERSION[:2] >= (1, 7):
         # Django 1.7 requires an explicit setup() when running tests in PTVS
         @classmethod
@@ -38,16 +49,33 @@ class SearchFormTest(TestCase):
 
     def test_search_by_title(self):
         """Tests search by title."""
-        response = self.client.post('/', {'query': '','distance': '','year': '', 'title': 'Need For Speed', 
-        'production_company':'','distributor':'','director':'','writer':''})
+        q = self.EMPTY_SEARCH_QUERY.copy()
+        q['title'] = 'Need For Speed'
+        response = self.client.post('/', q)
         self.assertContains(response, 'Need For Speed', count=5, status_code=200)
 
     def test_search_by_year(self):
         """Tests search by title."""
-        response = self.client.post('/', {'query': '','distance': '','year': '1973', 'title': '', 
-        'production_company':'','distributor':'','director':'','writer':''})
+        q = self.EMPTY_SEARCH_QUERY.copy()
+        q['year'] = '1973'
+        response = self.client.post('/', q)
         self.assertContains(response, 'Magnum Force', count=12, status_code=200)
         self.assertContains(response, 'American Graffiti', count=1, status_code=200)
+
+    def test_search_by_address_without_distance(self):
+        """Tests search by title."""
+        q = self.EMPTY_SEARCH_QUERY.copy()
+        q['query'] = '60 Spear Street'
+        response = self.client.post('/', q)
+        self.assertContains(response, 'Distance is required when you search by address', count=1, status_code=200)
+
+    def test_search_by_address(self):
+        """Tests search by title."""
+        q = self.EMPTY_SEARCH_QUERY.copy()
+        q['query'] = '60 Spear Street'
+        q['distance'] = 3.0
+        response = self.client.post('/', q)
+        self.assertContains(response, 'Nine Months', count=1, status_code=200)
         
 class AutoCompleteTest(TestCase):
     """Tests for autocomplete."""
