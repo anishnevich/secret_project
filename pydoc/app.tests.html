@@ -1,0 +1,1485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module app.tests</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="app.html"><font color="#ffffff">app</font></a>.tests</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cananishn%5Cdocuments%5Cvisual%20studio%202013%5Cprojects%5Cmovielocations%5Cmovielocations%5Capp%5Ctests.py">c:\users\ananishn\documents\visual studio 2013\projects\movielocations\movielocations\app\tests.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;is&nbsp;unit&nbsp;tests.&nbsp;<br>
+All&nbsp;hardcoded&nbsp;counts&nbsp;calcualte&nbsp;based&nbsp;on&nbsp;test&nbsp;data.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="django.html">django</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="django.test.testcases.html#TestCase">django.test.testcases.TestCase</a>(<a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="app.tests.html#AutoCompleteTest">AutoCompleteTest</a>
+</font></dt><dt><font face="helvetica, arial"><a href="app.tests.html#SearchFormTest">SearchFormTest</a>
+</font></dt><dt><font face="helvetica, arial"><a href="app.tests.html#ViewTest">ViewTest</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AutoCompleteTest">class <strong>AutoCompleteTest</strong></a>(<a href="django.test.testcases.html#TestCase">django.test.testcases.TestCase</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Tests&nbsp;for&nbsp;autocomplete.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="app.tests.html#AutoCompleteTest">AutoCompleteTest</a></dd>
+<dd><a href="django.test.testcases.html#TestCase">django.test.testcases.TestCase</a></dd>
+<dd><a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a></dd>
+<dd><a href="django.test.testcases.html#SimpleTestCase">django.test.testcases.SimpleTestCase</a></dd>
+<dd><a href="unittest.case.html#TestCase">unittest.case.TestCase</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="AutoCompleteTest-test_director_autocompletion"><strong>test_director_autocompletion</strong></a>(self)</dt><dd><tt>Tests&nbsp;autocompletion&nbsp;for&nbsp;director.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-test_distributor_autocompletion"><strong>test_distributor_autocompletion</strong></a>(self)</dt><dd><tt>Tests&nbsp;autocompletion&nbsp;for&nbsp;distributor.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-test_distributor_autocompletion_empty_result"><strong>test_distributor_autocompletion_empty_result</strong></a>(self)</dt><dd><tt>Tests&nbsp;autocompletion&nbsp;for&nbsp;distributor.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-test_production_company_autocompletion"><strong>test_production_company_autocompletion</strong></a>(self)</dt><dd><tt>Tests&nbsp;autocompletion&nbsp;for&nbsp;production_company.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-test_title_autocompletion"><strong>test_title_autocompletion</strong></a>(self)</dt><dd><tt>Tests&nbsp;autocompletion&nbsp;for&nbsp;title.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-test_title_autocompletion_with_empty_result"><strong>test_title_autocompletion_with_empty_result</strong></a>(self)</dt><dd><tt>Tests&nbsp;autocompletion&nbsp;for&nbsp;title.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-test_writer_autocompletion"><strong>test_writer_autocompletion</strong></a>(self)</dt><dd><tt>Tests&nbsp;autocompletion&nbsp;for&nbsp;writer.</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="AutoCompleteTest-setUpClass"><strong>setUpClass</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>#&nbsp;Django&nbsp;1.7&nbsp;requires&nbsp;an&nbsp;explicit&nbsp;setup()&nbsp;when&nbsp;running&nbsp;tests&nbsp;in&nbsp;PTVS</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a>:<br>
+<dl><dt><a name="AutoCompleteTest-assertNumQueries"><strong>assertNumQueries</strong></a>(self, num, func=None, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertQuerysetEqual"><strong>assertQuerysetEqual</strong></a>(self, qs, values, transform=<built-in function repr>, ordered=True, msg=None)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a>:<br>
+<dl><dt><strong>available_apps</strong> = None</dl>
+
+<dl><dt><strong>fixtures</strong> = None</dl>
+
+<dl><dt><strong>reset_sequences</strong> = False</dl>
+
+<dl><dt><strong>serialized_rollback</strong> = False</dl>
+
+<hr>
+Methods inherited from <a href="django.test.testcases.html#SimpleTestCase">django.test.testcases.SimpleTestCase</a>:<br>
+<dl><dt><a name="AutoCompleteTest-__call__"><strong>__call__</strong></a>(self, result=None)</dt><dd><tt>Wrapper&nbsp;around&nbsp;default&nbsp;__call__&nbsp;method&nbsp;to&nbsp;perform&nbsp;common&nbsp;Django&nbsp;test<br>
+set&nbsp;up.&nbsp;This&nbsp;means&nbsp;that&nbsp;user-defined&nbsp;Test&nbsp;Cases&nbsp;aren't&nbsp;required&nbsp;to<br>
+include&nbsp;a&nbsp;call&nbsp;to&nbsp;super().<a href="#AutoCompleteTest-setUp">setUp</a>().</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertContains"><strong>assertContains</strong></a>(self, response, text, count=None, status_code=200, msg_prefix='', html=False)</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;response&nbsp;indicates&nbsp;that&nbsp;some&nbsp;content&nbsp;was&nbsp;retrieved<br>
+successfully,&nbsp;(i.e.,&nbsp;the&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;was&nbsp;as&nbsp;expected),&nbsp;and&nbsp;that<br>
+``text``&nbsp;occurs&nbsp;``count``&nbsp;times&nbsp;in&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;response.<br>
+If&nbsp;``count``&nbsp;is&nbsp;None,&nbsp;the&nbsp;count&nbsp;doesn't&nbsp;matter&nbsp;-&nbsp;the&nbsp;assertion&nbsp;is&nbsp;true<br>
+if&nbsp;the&nbsp;text&nbsp;occurs&nbsp;at&nbsp;least&nbsp;once&nbsp;in&nbsp;the&nbsp;response.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertFieldOutput"><strong>assertFieldOutput</strong></a>(self, fieldclass, valid, invalid, field_args=None, field_kwargs=None, empty_value='')</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;form&nbsp;field&nbsp;behaves&nbsp;correctly&nbsp;with&nbsp;various&nbsp;inputs.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fieldclass:&nbsp;the&nbsp;class&nbsp;of&nbsp;the&nbsp;field&nbsp;to&nbsp;be&nbsp;tested.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;valid:&nbsp;a&nbsp;dictionary&nbsp;mapping&nbsp;valid&nbsp;inputs&nbsp;to&nbsp;their&nbsp;expected<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cleaned&nbsp;values.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;invalid:&nbsp;a&nbsp;dictionary&nbsp;mapping&nbsp;invalid&nbsp;inputs&nbsp;to&nbsp;one&nbsp;or&nbsp;more<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raised&nbsp;error&nbsp;messages.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;field_args:&nbsp;the&nbsp;args&nbsp;passed&nbsp;to&nbsp;instantiate&nbsp;the&nbsp;field<br>
+&nbsp;&nbsp;&nbsp;&nbsp;field_kwargs:&nbsp;the&nbsp;kwargs&nbsp;passed&nbsp;to&nbsp;instantiate&nbsp;the&nbsp;field<br>
+&nbsp;&nbsp;&nbsp;&nbsp;empty_value:&nbsp;the&nbsp;expected&nbsp;clean&nbsp;output&nbsp;for&nbsp;inputs&nbsp;in&nbsp;empty_values</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertFormError"><strong>assertFormError</strong></a>(self, response, form, field, errors, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;form&nbsp;used&nbsp;to&nbsp;render&nbsp;the&nbsp;response&nbsp;has&nbsp;a&nbsp;specific&nbsp;field<br>
+error.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertFormsetError"><strong>assertFormsetError</strong></a>(self, response, formset, form_index, field, errors, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;formset&nbsp;used&nbsp;to&nbsp;render&nbsp;the&nbsp;response&nbsp;has&nbsp;a&nbsp;specific&nbsp;error.<br>
+&nbsp;<br>
+For&nbsp;field&nbsp;errors,&nbsp;specify&nbsp;the&nbsp;``form_index``&nbsp;and&nbsp;the&nbsp;``field``.<br>
+For&nbsp;non-field&nbsp;errors,&nbsp;specify&nbsp;the&nbsp;``form_index``&nbsp;and&nbsp;the&nbsp;``field``&nbsp;as<br>
+None.<br>
+For&nbsp;non-form&nbsp;errors,&nbsp;specify&nbsp;``form_index``&nbsp;as&nbsp;None&nbsp;and&nbsp;the&nbsp;``field``<br>
+as&nbsp;None.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertHTMLEqual"><strong>assertHTMLEqual</strong></a>(self, html1, html2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;HTML&nbsp;snippets&nbsp;are&nbsp;semantically&nbsp;the&nbsp;same.<br>
+Whitespace&nbsp;in&nbsp;most&nbsp;cases&nbsp;is&nbsp;ignored,&nbsp;and&nbsp;attribute&nbsp;ordering&nbsp;is&nbsp;not<br>
+significant.&nbsp;The&nbsp;passed-in&nbsp;arguments&nbsp;must&nbsp;be&nbsp;valid&nbsp;HTML.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertHTMLNotEqual"><strong>assertHTMLNotEqual</strong></a>(self, html1, html2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;HTML&nbsp;snippets&nbsp;are&nbsp;not&nbsp;semantically&nbsp;equivalent.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertInHTML"><strong>assertInHTML</strong></a>(self, needle, haystack, count=None, msg_prefix='')</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertJSONEqual"><strong>assertJSONEqual</strong></a>(self, raw, expected_data, msg=None)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertNotContains"><strong>assertNotContains</strong></a>(self, response, text, status_code=200, msg_prefix='', html=False)</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;response&nbsp;indicates&nbsp;that&nbsp;some&nbsp;content&nbsp;was&nbsp;retrieved<br>
+successfully,&nbsp;(i.e.,&nbsp;the&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;was&nbsp;as&nbsp;expected),&nbsp;and&nbsp;that<br>
+``text``&nbsp;doesn't&nbsp;occurs&nbsp;in&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;response.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertRaisesMessage"><strong>assertRaisesMessage</strong></a>(self, expected_exception, expected_message, callable_obj=None, *args, **kwargs)</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;message&nbsp;in&nbsp;a&nbsp;raised&nbsp;exception&nbsp;matches&nbsp;the&nbsp;passed<br>
+value.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_exception:&nbsp;Exception&nbsp;class&nbsp;expected&nbsp;to&nbsp;be&nbsp;raised.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_message:&nbsp;expected&nbsp;error&nbsp;message&nbsp;string&nbsp;value.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable_obj:&nbsp;Function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;Extra&nbsp;args.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Extra&nbsp;kwargs.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertRedirects"><strong>assertRedirects</strong></a>(self, response, expected_url, status_code=302, target_status_code=200, host=None, msg_prefix='', fetch_redirect_response=True)</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;response&nbsp;redirected&nbsp;to&nbsp;a&nbsp;specific&nbsp;URL,&nbsp;and&nbsp;that&nbsp;the<br>
+redirect&nbsp;URL&nbsp;can&nbsp;be&nbsp;loaded.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;assertRedirects&nbsp;won't&nbsp;work&nbsp;for&nbsp;external&nbsp;links&nbsp;since&nbsp;it&nbsp;uses<br>
+TestClient&nbsp;to&nbsp;do&nbsp;a&nbsp;request&nbsp;(use&nbsp;fetch_redirect_response=False&nbsp;to&nbsp;check<br>
+such&nbsp;links&nbsp;without&nbsp;fetching&nbsp;them).</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertTemplateNotUsed"><strong>assertTemplateNotUsed</strong></a>(self, response=None, template_name=None, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;template&nbsp;with&nbsp;the&nbsp;provided&nbsp;name&nbsp;was&nbsp;NOT&nbsp;used&nbsp;in<br>
+rendering&nbsp;the&nbsp;response.&nbsp;Also&nbsp;usable&nbsp;as&nbsp;context&nbsp;manager.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertTemplateUsed"><strong>assertTemplateUsed</strong></a>(self, response=None, template_name=None, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;template&nbsp;with&nbsp;the&nbsp;provided&nbsp;name&nbsp;was&nbsp;used&nbsp;in&nbsp;rendering<br>
+the&nbsp;response.&nbsp;Also&nbsp;usable&nbsp;as&nbsp;context&nbsp;manager.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertXMLEqual"><strong>assertXMLEqual</strong></a>(self, xml1, xml2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;XML&nbsp;snippets&nbsp;are&nbsp;semantically&nbsp;the&nbsp;same.<br>
+Whitespace&nbsp;in&nbsp;most&nbsp;cases&nbsp;is&nbsp;ignored,&nbsp;and&nbsp;attribute&nbsp;ordering&nbsp;is&nbsp;not<br>
+significant.&nbsp;The&nbsp;passed-in&nbsp;arguments&nbsp;must&nbsp;be&nbsp;valid&nbsp;XML.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertXMLNotEqual"><strong>assertXMLNotEqual</strong></a>(self, xml1, xml2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;XML&nbsp;snippets&nbsp;are&nbsp;not&nbsp;semantically&nbsp;equivalent.<br>
+Whitespace&nbsp;in&nbsp;most&nbsp;cases&nbsp;is&nbsp;ignored,&nbsp;and&nbsp;attribute&nbsp;ordering&nbsp;is&nbsp;not<br>
+significant.&nbsp;The&nbsp;passed-in&nbsp;arguments&nbsp;must&nbsp;be&nbsp;valid&nbsp;XML.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-modify_settings"><strong>modify_settings</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;context&nbsp;manager&nbsp;that&nbsp;temporarily&nbsp;applies&nbsp;changes&nbsp;a&nbsp;list&nbsp;setting&nbsp;and<br>
+reverts&nbsp;back&nbsp;to&nbsp;the&nbsp;original&nbsp;value&nbsp;when&nbsp;exiting&nbsp;the&nbsp;context.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-settings"><strong>settings</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;context&nbsp;manager&nbsp;that&nbsp;temporarily&nbsp;sets&nbsp;a&nbsp;setting&nbsp;and&nbsp;reverts&nbsp;to&nbsp;the&nbsp;original&nbsp;value&nbsp;when&nbsp;exiting&nbsp;the&nbsp;context.</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="django.test.testcases.html#SimpleTestCase">django.test.testcases.SimpleTestCase</a>:<br>
+<dl><dt><strong>client_class</strong> = &lt;class 'django.test.client.Client'&gt;<dd><tt>A&nbsp;class&nbsp;that&nbsp;can&nbsp;act&nbsp;as&nbsp;a&nbsp;client&nbsp;for&nbsp;testing&nbsp;purposes.<br>
+&nbsp;<br>
+It&nbsp;allows&nbsp;the&nbsp;user&nbsp;to&nbsp;compose&nbsp;GET&nbsp;and&nbsp;POST&nbsp;requests,&nbsp;and<br>
+obtain&nbsp;the&nbsp;response&nbsp;that&nbsp;the&nbsp;server&nbsp;gave&nbsp;to&nbsp;those&nbsp;requests.<br>
+The&nbsp;server&nbsp;Response&nbsp;objects&nbsp;are&nbsp;annotated&nbsp;with&nbsp;the&nbsp;details<br>
+of&nbsp;the&nbsp;contexts&nbsp;and&nbsp;templates&nbsp;that&nbsp;were&nbsp;rendered&nbsp;during&nbsp;the<br>
+process&nbsp;of&nbsp;serving&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+Client&nbsp;objects&nbsp;are&nbsp;stateful&nbsp;-&nbsp;they&nbsp;will&nbsp;retain&nbsp;cookie&nbsp;(and<br>
+thus&nbsp;session)&nbsp;details&nbsp;for&nbsp;the&nbsp;lifetime&nbsp;of&nbsp;the&nbsp;Client&nbsp;instance.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;not&nbsp;intended&nbsp;as&nbsp;a&nbsp;replacement&nbsp;for&nbsp;Twill/Selenium&nbsp;or<br>
+the&nbsp;like&nbsp;-&nbsp;it&nbsp;is&nbsp;here&nbsp;to&nbsp;allow&nbsp;testing&nbsp;against&nbsp;the<br>
+contexts&nbsp;and&nbsp;templates&nbsp;produced&nbsp;by&nbsp;a&nbsp;view,&nbsp;rather&nbsp;than&nbsp;the<br>
+HTML&nbsp;rendered&nbsp;to&nbsp;the&nbsp;end-user.</tt></dl>
+
+<hr>
+Methods inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><a name="AutoCompleteTest-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-__init__"><strong>__init__</strong></a>(self, methodName='runTest')</dt><dd><tt>Create&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;class&nbsp;that&nbsp;will&nbsp;use&nbsp;the&nbsp;named&nbsp;test<br>
+method&nbsp;when&nbsp;executed.&nbsp;Raises&nbsp;a&nbsp;ValueError&nbsp;if&nbsp;the&nbsp;instance&nbsp;does<br>
+not&nbsp;have&nbsp;a&nbsp;method&nbsp;with&nbsp;the&nbsp;specified&nbsp;name.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-addCleanup"><strong>addCleanup</strong></a>(self, function, *args, **kwargs)</dt><dd><tt>Add&nbsp;a&nbsp;function,&nbsp;with&nbsp;arguments,&nbsp;to&nbsp;be&nbsp;called&nbsp;when&nbsp;the&nbsp;test&nbsp;is<br>
+completed.&nbsp;Functions&nbsp;added&nbsp;are&nbsp;called&nbsp;on&nbsp;a&nbsp;LIFO&nbsp;basis&nbsp;and&nbsp;are<br>
+called&nbsp;after&nbsp;tearDown&nbsp;on&nbsp;test&nbsp;failure&nbsp;or&nbsp;success.<br>
+&nbsp;<br>
+Cleanup&nbsp;items&nbsp;are&nbsp;called&nbsp;even&nbsp;if&nbsp;setUp&nbsp;fails&nbsp;(unlike&nbsp;tearDown).</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-addTypeEqualityFunc"><strong>addTypeEqualityFunc</strong></a>(self, typeobj, function)</dt><dd><tt>Add&nbsp;a&nbsp;type&nbsp;specific&nbsp;assertEqual&nbsp;style&nbsp;function&nbsp;to&nbsp;compare&nbsp;a&nbsp;type.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;is&nbsp;for&nbsp;use&nbsp;by&nbsp;<a href="django.test.testcases.html#TestCase">TestCase</a>&nbsp;subclasses&nbsp;that&nbsp;need&nbsp;to&nbsp;register<br>
+their&nbsp;own&nbsp;type&nbsp;equality&nbsp;functions&nbsp;to&nbsp;provide&nbsp;nicer&nbsp;error&nbsp;messages.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;typeobj:&nbsp;The&nbsp;data&nbsp;type&nbsp;to&nbsp;call&nbsp;this&nbsp;function&nbsp;on&nbsp;when&nbsp;both&nbsp;values<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;in&nbsp;<a href="#AutoCompleteTest-assertEqual">assertEqual</a>().<br>
+&nbsp;&nbsp;&nbsp;&nbsp;function:&nbsp;The&nbsp;callable&nbsp;taking&nbsp;two&nbsp;arguments&nbsp;and&nbsp;an&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msg=&nbsp;argument&nbsp;that&nbsp;raises&nbsp;self.<strong>failureException</strong>&nbsp;with&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;useful&nbsp;error&nbsp;message&nbsp;when&nbsp;the&nbsp;two&nbsp;arguments&nbsp;are&nbsp;not&nbsp;equal.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertAlmostEqual"><strong>assertAlmostEqual</strong></a>(self, first, second, places=None, msg=None, delta=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero,&nbsp;or&nbsp;by&nbsp;comparing&nbsp;that&nbsp;the<br>
+between&nbsp;the&nbsp;two&nbsp;objects&nbsp;is&nbsp;more&nbsp;than&nbsp;the&nbsp;given&nbsp;delta.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;two&nbsp;objects&nbsp;compare&nbsp;equal&nbsp;then&nbsp;they&nbsp;will&nbsp;automatically<br>
+compare&nbsp;almost&nbsp;equal.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertAlmostEquals"><strong>assertAlmostEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertCountEqual"><strong>assertCountEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>An&nbsp;unordered&nbsp;sequence&nbsp;comparison&nbsp;asserting&nbsp;that&nbsp;the&nbsp;same&nbsp;elements,<br>
+regardless&nbsp;of&nbsp;order.&nbsp;&nbsp;If&nbsp;the&nbsp;same&nbsp;element&nbsp;occurs&nbsp;more&nbsp;than&nbsp;once,<br>
+it&nbsp;verifies&nbsp;that&nbsp;the&nbsp;elements&nbsp;occur&nbsp;the&nbsp;same&nbsp;number&nbsp;of&nbsp;times.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#AutoCompleteTest-assertEqual">assertEqual</a>(Counter(list(first)),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Counter(list(second)))<br>
+&nbsp;<br>
+&nbsp;Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;[0,&nbsp;1,&nbsp;1]&nbsp;and&nbsp;[1,&nbsp;0,&nbsp;1]&nbsp;compare&nbsp;equal.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;[0,&nbsp;0,&nbsp;1]&nbsp;and&nbsp;[0,&nbsp;1]&nbsp;compare&nbsp;unequal.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertDictContainsSubset"><strong>assertDictContainsSubset</strong></a>(self, subset, dictionary, msg=None)</dt><dd><tt>Checks&nbsp;whether&nbsp;dictionary&nbsp;is&nbsp;a&nbsp;superset&nbsp;of&nbsp;subset.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertDictEqual"><strong>assertDictEqual</strong></a>(self, d1, d2, msg=None)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertEqual"><strong>assertEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertEquals"><strong>assertEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertFalse"><strong>assertFalse</strong></a>(self, expr, msg=None)</dt><dd><tt>Check&nbsp;that&nbsp;the&nbsp;expression&nbsp;is&nbsp;false.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertGreater"><strong>assertGreater</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(a&nbsp;&gt;&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertGreaterEqual"><strong>assertGreaterEqual</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(a&nbsp;&gt;=&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertIn"><strong>assertIn</strong></a>(self, member, container, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(a&nbsp;in&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertIs"><strong>assertIs</strong></a>(self, expr1, expr2, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(a&nbsp;is&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertIsInstance"><strong>assertIsInstance</strong></a>(self, obj, cls, msg=None)</dt><dd><tt>Same&nbsp;as&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(isinstance(obj,&nbsp;cls)),&nbsp;with&nbsp;a&nbsp;nicer<br>
+default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertIsNone"><strong>assertIsNone</strong></a>(self, obj, msg=None)</dt><dd><tt>Same&nbsp;as&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(obj&nbsp;is&nbsp;None),&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertIsNot"><strong>assertIsNot</strong></a>(self, expr1, expr2, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(a&nbsp;is&nbsp;not&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertIsNotNone"><strong>assertIsNotNone</strong></a>(self, obj, msg=None)</dt><dd><tt>Included&nbsp;for&nbsp;symmetry&nbsp;with&nbsp;assertIsNone.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertLess"><strong>assertLess</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(a&nbsp;&lt;&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertLessEqual"><strong>assertLessEqual</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(a&nbsp;&lt;=&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertListEqual"><strong>assertListEqual</strong></a>(self, list1, list2, msg=None)</dt><dd><tt>A&nbsp;list-specific&nbsp;equality&nbsp;assertion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list1:&nbsp;The&nbsp;first&nbsp;list&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list2:&nbsp;The&nbsp;second&nbsp;list&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertLogs"><strong>assertLogs</strong></a>(self, logger=None, level=None)</dt><dd><tt>Fail&nbsp;unless&nbsp;a&nbsp;log&nbsp;message&nbsp;of&nbsp;level&nbsp;*level*&nbsp;or&nbsp;higher&nbsp;is&nbsp;emitted<br>
+on&nbsp;*logger_name*&nbsp;or&nbsp;its&nbsp;children.&nbsp;&nbsp;If&nbsp;omitted,&nbsp;*level*&nbsp;defaults&nbsp;to<br>
+INFO&nbsp;and&nbsp;*logger*&nbsp;defaults&nbsp;to&nbsp;the&nbsp;root&nbsp;logger.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;must&nbsp;be&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;manager,&nbsp;and&nbsp;will&nbsp;yield<br>
+a&nbsp;recording&nbsp;object&nbsp;with&nbsp;two&nbsp;attributes:&nbsp;`output`&nbsp;and&nbsp;`records`.<br>
+At&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;context&nbsp;manager,&nbsp;the&nbsp;`output`&nbsp;attribute&nbsp;will<br>
+be&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;matching&nbsp;formatted&nbsp;log&nbsp;messages&nbsp;and&nbsp;the<br>
+`records`&nbsp;attribute&nbsp;will&nbsp;be&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;corresponding&nbsp;LogRecord<br>
+objects.<br>
+&nbsp;<br>
+Example::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#AutoCompleteTest-assertLogs">assertLogs</a>('foo',&nbsp;level='INFO')&nbsp;as&nbsp;cm:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.getLogger('foo').info('first&nbsp;message')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.getLogger('foo.bar').error('second&nbsp;message')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#AutoCompleteTest-assertEqual">assertEqual</a>(cm.output,&nbsp;['INFO:foo:first&nbsp;message',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ERROR:foo.bar:second&nbsp;message'])</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertMultiLineEqual"><strong>assertMultiLineEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>Assert&nbsp;that&nbsp;two&nbsp;multi-line&nbsp;strings&nbsp;are&nbsp;equal.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertNotAlmostEqual"><strong>assertNotAlmostEqual</strong></a>(self, first, second, places=None, msg=None, delta=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero,&nbsp;or&nbsp;by&nbsp;comparing&nbsp;that&nbsp;the<br>
+between&nbsp;the&nbsp;two&nbsp;objects&nbsp;is&nbsp;less&nbsp;than&nbsp;the&nbsp;given&nbsp;delta.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).<br>
+&nbsp;<br>
+Objects&nbsp;that&nbsp;are&nbsp;equal&nbsp;automatically&nbsp;fail.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertNotAlmostEquals"><strong>assertNotAlmostEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertNotEqual"><strong>assertNotEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'!='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertNotEquals"><strong>assertNotEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertNotIn"><strong>assertNotIn</strong></a>(self, member, container, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#AutoCompleteTest-assertTrue">assertTrue</a>(a&nbsp;not&nbsp;in&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertNotIsInstance"><strong>assertNotIsInstance</strong></a>(self, obj, cls, msg=None)</dt><dd><tt>Included&nbsp;for&nbsp;symmetry&nbsp;with&nbsp;assertIsInstance.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertNotRegex"><strong>assertNotRegex</strong></a>(self, text, unexpected_regex, msg=None)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;if&nbsp;the&nbsp;text&nbsp;matches&nbsp;the&nbsp;regular&nbsp;expression.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertRaises"><strong>assertRaises</strong></a>(self, excClass, callableObj=None, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;an&nbsp;exception&nbsp;of&nbsp;class&nbsp;excClass&nbsp;is&nbsp;raised<br>
+by&nbsp;callableObj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;exception&nbsp;is<br>
+raised,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;caught,&nbsp;and&nbsp;the&nbsp;test&nbsp;case&nbsp;will&nbsp;be<br>
+deemed&nbsp;to&nbsp;have&nbsp;suffered&nbsp;an&nbsp;error,&nbsp;exactly&nbsp;as&nbsp;for&nbsp;an<br>
+unexpected&nbsp;exception.<br>
+&nbsp;<br>
+If&nbsp;called&nbsp;with&nbsp;callableObj&nbsp;omitted&nbsp;or&nbsp;None,&nbsp;will&nbsp;return&nbsp;a<br>
+context&nbsp;object&nbsp;used&nbsp;like&nbsp;this::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#AutoCompleteTest-assertRaises">assertRaises</a>(SomeException):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;<br>
+An&nbsp;optional&nbsp;keyword&nbsp;argument&nbsp;'msg'&nbsp;can&nbsp;be&nbsp;provided&nbsp;when&nbsp;assertRaises<br>
+is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;object.<br>
+&nbsp;<br>
+The&nbsp;context&nbsp;manager&nbsp;keeps&nbsp;a&nbsp;reference&nbsp;to&nbsp;the&nbsp;exception&nbsp;as<br>
+the&nbsp;'exception'&nbsp;attribute.&nbsp;This&nbsp;allows&nbsp;you&nbsp;to&nbsp;inspect&nbsp;the<br>
+exception&nbsp;after&nbsp;the&nbsp;assertion::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#AutoCompleteTest-assertRaises">assertRaises</a>(SomeException)&nbsp;as&nbsp;cm:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the_exception&nbsp;=&nbsp;cm.exception<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#AutoCompleteTest-assertEqual">assertEqual</a>(the_exception.error_code,&nbsp;3)</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertRaisesRegex"><strong>assertRaisesRegex</strong></a>(self, expected_exception, expected_regex, callable_obj=None, *args, **kwargs)</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;message&nbsp;in&nbsp;a&nbsp;raised&nbsp;exception&nbsp;matches&nbsp;a&nbsp;regex.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_exception:&nbsp;Exception&nbsp;class&nbsp;expected&nbsp;to&nbsp;be&nbsp;raised.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_regex:&nbsp;Regex&nbsp;(re&nbsp;pattern&nbsp;object&nbsp;or&nbsp;string)&nbsp;expected<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;error&nbsp;message.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable_obj:&nbsp;Function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;used&nbsp;in&nbsp;case&nbsp;of&nbsp;failure.&nbsp;Can&nbsp;only&nbsp;be&nbsp;used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when&nbsp;assertRaisesRegex&nbsp;is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;manager.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;Extra&nbsp;args.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Extra&nbsp;kwargs.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertRaisesRegexp"><strong>assertRaisesRegexp</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertRegex"><strong>assertRegex</strong></a>(self, text, expected_regex, msg=None)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;unless&nbsp;the&nbsp;text&nbsp;matches&nbsp;the&nbsp;regular&nbsp;expression.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertRegexpMatches"><strong>assertRegexpMatches</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertSequenceEqual"><strong>assertSequenceEqual</strong></a>(self, seq1, seq2, msg=None, seq_type=None)</dt><dd><tt>An&nbsp;equality&nbsp;assertion&nbsp;for&nbsp;ordered&nbsp;sequences&nbsp;(like&nbsp;lists&nbsp;and&nbsp;tuples).<br>
+&nbsp;<br>
+For&nbsp;the&nbsp;purposes&nbsp;of&nbsp;this&nbsp;function,&nbsp;a&nbsp;valid&nbsp;ordered&nbsp;sequence&nbsp;type&nbsp;is&nbsp;one<br>
+which&nbsp;can&nbsp;be&nbsp;indexed,&nbsp;has&nbsp;a&nbsp;length,&nbsp;and&nbsp;has&nbsp;an&nbsp;equality&nbsp;operator.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq1:&nbsp;The&nbsp;first&nbsp;sequence&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq2:&nbsp;The&nbsp;second&nbsp;sequence&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq_type:&nbsp;The&nbsp;expected&nbsp;datatype&nbsp;of&nbsp;the&nbsp;sequences,&nbsp;or&nbsp;None&nbsp;if&nbsp;no<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;datatype&nbsp;should&nbsp;be&nbsp;enforced.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertSetEqual"><strong>assertSetEqual</strong></a>(self, set1, set2, msg=None)</dt><dd><tt>A&nbsp;set-specific&nbsp;equality&nbsp;assertion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;set1:&nbsp;The&nbsp;first&nbsp;set&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;set2:&nbsp;The&nbsp;second&nbsp;set&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.<br>
+&nbsp;<br>
+assertSetEqual&nbsp;uses&nbsp;ducktyping&nbsp;to&nbsp;support&nbsp;different&nbsp;types&nbsp;of&nbsp;sets,&nbsp;and<br>
+is&nbsp;optimized&nbsp;for&nbsp;sets&nbsp;specifically&nbsp;(parameters&nbsp;must&nbsp;support&nbsp;a<br>
+difference&nbsp;method).</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertTrue"><strong>assertTrue</strong></a>(self, expr, msg=None)</dt><dd><tt>Check&nbsp;that&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertTupleEqual"><strong>assertTupleEqual</strong></a>(self, tuple1, tuple2, msg=None)</dt><dd><tt>A&nbsp;tuple-specific&nbsp;equality&nbsp;assertion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple1:&nbsp;The&nbsp;first&nbsp;tuple&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple2:&nbsp;The&nbsp;second&nbsp;tuple&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertWarns"><strong>assertWarns</strong></a>(self, expected_warning, callable_obj=None, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;a&nbsp;warning&nbsp;of&nbsp;class&nbsp;warnClass&nbsp;is&nbsp;triggered<br>
+by&nbsp;callable_obj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;warning&nbsp;is<br>
+triggered,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;handled:&nbsp;depending&nbsp;on&nbsp;the&nbsp;other<br>
+warning&nbsp;filtering&nbsp;rules&nbsp;in&nbsp;effect,&nbsp;it&nbsp;might&nbsp;be&nbsp;silenced,&nbsp;printed<br>
+out,&nbsp;or&nbsp;raised&nbsp;as&nbsp;an&nbsp;exception.<br>
+&nbsp;<br>
+If&nbsp;called&nbsp;with&nbsp;callable_obj&nbsp;omitted&nbsp;or&nbsp;None,&nbsp;will&nbsp;return&nbsp;a<br>
+context&nbsp;object&nbsp;used&nbsp;like&nbsp;this::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#AutoCompleteTest-assertWarns">assertWarns</a>(SomeWarning):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;<br>
+An&nbsp;optional&nbsp;keyword&nbsp;argument&nbsp;'msg'&nbsp;can&nbsp;be&nbsp;provided&nbsp;when&nbsp;assertWarns<br>
+is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;object.<br>
+&nbsp;<br>
+The&nbsp;context&nbsp;manager&nbsp;keeps&nbsp;a&nbsp;reference&nbsp;to&nbsp;the&nbsp;first&nbsp;matching<br>
+warning&nbsp;as&nbsp;the&nbsp;'warning'&nbsp;attribute;&nbsp;similarly,&nbsp;the&nbsp;'filename'<br>
+and&nbsp;'lineno'&nbsp;attributes&nbsp;give&nbsp;you&nbsp;information&nbsp;about&nbsp;the&nbsp;line<br>
+of&nbsp;Python&nbsp;code&nbsp;from&nbsp;which&nbsp;the&nbsp;warning&nbsp;was&nbsp;triggered.<br>
+This&nbsp;allows&nbsp;you&nbsp;to&nbsp;inspect&nbsp;the&nbsp;warning&nbsp;after&nbsp;the&nbsp;assertion::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#AutoCompleteTest-assertWarns">assertWarns</a>(SomeWarning)&nbsp;as&nbsp;cm:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the_warning&nbsp;=&nbsp;cm.warning<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#AutoCompleteTest-assertEqual">assertEqual</a>(the_warning.some_attribute,&nbsp;147)</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assertWarnsRegex"><strong>assertWarnsRegex</strong></a>(self, expected_warning, expected_regex, callable_obj=None, *args, **kwargs)</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;message&nbsp;in&nbsp;a&nbsp;triggered&nbsp;warning&nbsp;matches&nbsp;a&nbsp;regexp.<br>
+Basic&nbsp;functioning&nbsp;is&nbsp;similar&nbsp;to&nbsp;<a href="#AutoCompleteTest-assertWarns">assertWarns</a>()&nbsp;with&nbsp;the&nbsp;addition<br>
+that&nbsp;only&nbsp;warnings&nbsp;whose&nbsp;messages&nbsp;also&nbsp;match&nbsp;the&nbsp;regular&nbsp;expression<br>
+are&nbsp;considered&nbsp;successful&nbsp;matches.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_warning:&nbsp;Warning&nbsp;class&nbsp;expected&nbsp;to&nbsp;be&nbsp;triggered.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_regex:&nbsp;Regex&nbsp;(re&nbsp;pattern&nbsp;object&nbsp;or&nbsp;string)&nbsp;expected<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;error&nbsp;message.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable_obj:&nbsp;Function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;used&nbsp;in&nbsp;case&nbsp;of&nbsp;failure.&nbsp;Can&nbsp;only&nbsp;be&nbsp;used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when&nbsp;assertWarnsRegex&nbsp;is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;manager.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;Extra&nbsp;args.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Extra&nbsp;kwargs.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-assert_"><strong>assert_</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-countTestCases"><strong>countTestCases</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-debug"><strong>debug</strong></a>(self)</dt><dd><tt>Run&nbsp;the&nbsp;test&nbsp;without&nbsp;collecting&nbsp;errors&nbsp;in&nbsp;a&nbsp;TestResult</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-defaultTestResult"><strong>defaultTestResult</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-doCleanups"><strong>doCleanups</strong></a>(self)</dt><dd><tt>Execute&nbsp;all&nbsp;cleanup&nbsp;functions.&nbsp;Normally&nbsp;called&nbsp;for&nbsp;you&nbsp;after<br>
+tearDown.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-fail"><strong>fail</strong></a>(self, msg=None)</dt><dd><tt>Fail&nbsp;immediately,&nbsp;with&nbsp;the&nbsp;given&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-failIf"><strong>failIf</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-failIfAlmostEqual"><strong>failIfAlmostEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-failIfEqual"><strong>failIfEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-failUnless"><strong>failUnless</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-failUnlessAlmostEqual"><strong>failUnlessAlmostEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-failUnlessEqual"><strong>failUnlessEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-failUnlessRaises"><strong>failUnlessRaises</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-id"><strong>id</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-run"><strong>run</strong></a>(self, result=None)</dt></dl>
+
+<dl><dt><a name="AutoCompleteTest-setUp"><strong>setUp</strong></a>(self)</dt><dd><tt>Hook&nbsp;method&nbsp;for&nbsp;setting&nbsp;up&nbsp;the&nbsp;test&nbsp;fixture&nbsp;before&nbsp;exercising&nbsp;it.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-shortDescription"><strong>shortDescription</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;one-line&nbsp;description&nbsp;of&nbsp;the&nbsp;test,&nbsp;or&nbsp;None&nbsp;if&nbsp;no<br>
+description&nbsp;has&nbsp;been&nbsp;provided.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;returns&nbsp;the&nbsp;first&nbsp;line&nbsp;of<br>
+the&nbsp;specified&nbsp;test&nbsp;method's&nbsp;docstring.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-skipTest"><strong>skipTest</strong></a>(self, reason)</dt><dd><tt>Skip&nbsp;this&nbsp;test.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-subTest"><strong>subTest</strong></a>(self, msg=None, **params)</dt><dd><tt>Return&nbsp;a&nbsp;context&nbsp;manager&nbsp;that&nbsp;will&nbsp;return&nbsp;the&nbsp;enclosed&nbsp;block<br>
+of&nbsp;code&nbsp;in&nbsp;a&nbsp;subtest&nbsp;identified&nbsp;by&nbsp;the&nbsp;optional&nbsp;message&nbsp;and<br>
+keyword&nbsp;parameters.&nbsp;&nbsp;A&nbsp;failure&nbsp;in&nbsp;the&nbsp;subtest&nbsp;marks&nbsp;the&nbsp;test<br>
+case&nbsp;as&nbsp;failed&nbsp;but&nbsp;resumes&nbsp;execution&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;enclosed<br>
+block,&nbsp;allowing&nbsp;further&nbsp;test&nbsp;code&nbsp;to&nbsp;be&nbsp;executed.</tt></dd></dl>
+
+<dl><dt><a name="AutoCompleteTest-tearDown"><strong>tearDown</strong></a>(self)</dt><dd><tt>Hook&nbsp;method&nbsp;for&nbsp;deconstructing&nbsp;the&nbsp;test&nbsp;fixture&nbsp;after&nbsp;testing&nbsp;it.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><a name="AutoCompleteTest-tearDownClass"><strong>tearDownClass</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Hook&nbsp;method&nbsp;for&nbsp;deconstructing&nbsp;the&nbsp;class&nbsp;fixture&nbsp;after&nbsp;running&nbsp;all&nbsp;tests&nbsp;in&nbsp;the&nbsp;class.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><strong>failureException</strong> = &lt;class 'AssertionError'&gt;<dd><tt>Assertion&nbsp;failed.</tt></dl>
+
+<dl><dt><strong>longMessage</strong> = True</dl>
+
+<dl><dt><strong>maxDiff</strong> = 640</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SearchFormTest">class <strong>SearchFormTest</strong></a>(<a href="django.test.testcases.html#TestCase">django.test.testcases.TestCase</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Tests&nbsp;for&nbsp;the&nbsp;search.&nbsp;<br>
+All&nbsp;magic&nbsp;numbers&nbsp;are&nbsp;calculated&nbsp;as&nbsp;N&nbsp;=&nbsp;(number&nbsp;of&nbsp;search&nbsp;result)&nbsp;*&nbsp;2&nbsp;+&nbsp;1.&nbsp;<br>
+As&nbsp;titles&nbsp;appear&nbsp;twice&nbsp;on&nbsp;marker&nbsp;and&nbsp;one&nbsp;comes&nbsp;from&nbsp;search&nbsp;form<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="app.tests.html#SearchFormTest">SearchFormTest</a></dd>
+<dd><a href="django.test.testcases.html#TestCase">django.test.testcases.TestCase</a></dd>
+<dd><a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a></dd>
+<dd><a href="django.test.testcases.html#SimpleTestCase">django.test.testcases.SimpleTestCase</a></dd>
+<dd><a href="unittest.case.html#TestCase">unittest.case.TestCase</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SearchFormTest-test_search_by_address"><strong>test_search_by_address</strong></a>(self)</dt><dd><tt>Tests&nbsp;search&nbsp;by&nbsp;title.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-test_search_by_address_without_distance"><strong>test_search_by_address_without_distance</strong></a>(self)</dt><dd><tt>Tests&nbsp;search&nbsp;by&nbsp;title.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-test_search_by_title"><strong>test_search_by_title</strong></a>(self)</dt><dd><tt>Tests&nbsp;search&nbsp;by&nbsp;title.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-test_search_by_year"><strong>test_search_by_year</strong></a>(self)</dt><dd><tt>Tests&nbsp;search&nbsp;by&nbsp;title.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-test_search_misformed_post"><strong>test_search_misformed_post</strong></a>(self)</dt><dd><tt>Tests&nbsp;search&nbsp;with&nbsp;empty&nbsp;POST&nbsp;request</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="SearchFormTest-setUpClass"><strong>setUpClass</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>#&nbsp;Django&nbsp;1.7&nbsp;requires&nbsp;an&nbsp;explicit&nbsp;setup()&nbsp;when&nbsp;running&nbsp;tests&nbsp;in&nbsp;PTVS</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>EMPTY_SEARCH_QUERY</strong> = {'director': '', 'distance': '', 'distributor': '', 'production_company': '', 'query': '', 'title': '', 'writer': '', 'year': ''}</dl>
+
+<hr>
+Methods inherited from <a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a>:<br>
+<dl><dt><a name="SearchFormTest-assertNumQueries"><strong>assertNumQueries</strong></a>(self, num, func=None, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertQuerysetEqual"><strong>assertQuerysetEqual</strong></a>(self, qs, values, transform=<built-in function repr>, ordered=True, msg=None)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a>:<br>
+<dl><dt><strong>available_apps</strong> = None</dl>
+
+<dl><dt><strong>fixtures</strong> = None</dl>
+
+<dl><dt><strong>reset_sequences</strong> = False</dl>
+
+<dl><dt><strong>serialized_rollback</strong> = False</dl>
+
+<hr>
+Methods inherited from <a href="django.test.testcases.html#SimpleTestCase">django.test.testcases.SimpleTestCase</a>:<br>
+<dl><dt><a name="SearchFormTest-__call__"><strong>__call__</strong></a>(self, result=None)</dt><dd><tt>Wrapper&nbsp;around&nbsp;default&nbsp;__call__&nbsp;method&nbsp;to&nbsp;perform&nbsp;common&nbsp;Django&nbsp;test<br>
+set&nbsp;up.&nbsp;This&nbsp;means&nbsp;that&nbsp;user-defined&nbsp;Test&nbsp;Cases&nbsp;aren't&nbsp;required&nbsp;to<br>
+include&nbsp;a&nbsp;call&nbsp;to&nbsp;super().<a href="#SearchFormTest-setUp">setUp</a>().</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertContains"><strong>assertContains</strong></a>(self, response, text, count=None, status_code=200, msg_prefix='', html=False)</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;response&nbsp;indicates&nbsp;that&nbsp;some&nbsp;content&nbsp;was&nbsp;retrieved<br>
+successfully,&nbsp;(i.e.,&nbsp;the&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;was&nbsp;as&nbsp;expected),&nbsp;and&nbsp;that<br>
+``text``&nbsp;occurs&nbsp;``count``&nbsp;times&nbsp;in&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;response.<br>
+If&nbsp;``count``&nbsp;is&nbsp;None,&nbsp;the&nbsp;count&nbsp;doesn't&nbsp;matter&nbsp;-&nbsp;the&nbsp;assertion&nbsp;is&nbsp;true<br>
+if&nbsp;the&nbsp;text&nbsp;occurs&nbsp;at&nbsp;least&nbsp;once&nbsp;in&nbsp;the&nbsp;response.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertFieldOutput"><strong>assertFieldOutput</strong></a>(self, fieldclass, valid, invalid, field_args=None, field_kwargs=None, empty_value='')</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;form&nbsp;field&nbsp;behaves&nbsp;correctly&nbsp;with&nbsp;various&nbsp;inputs.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fieldclass:&nbsp;the&nbsp;class&nbsp;of&nbsp;the&nbsp;field&nbsp;to&nbsp;be&nbsp;tested.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;valid:&nbsp;a&nbsp;dictionary&nbsp;mapping&nbsp;valid&nbsp;inputs&nbsp;to&nbsp;their&nbsp;expected<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cleaned&nbsp;values.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;invalid:&nbsp;a&nbsp;dictionary&nbsp;mapping&nbsp;invalid&nbsp;inputs&nbsp;to&nbsp;one&nbsp;or&nbsp;more<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raised&nbsp;error&nbsp;messages.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;field_args:&nbsp;the&nbsp;args&nbsp;passed&nbsp;to&nbsp;instantiate&nbsp;the&nbsp;field<br>
+&nbsp;&nbsp;&nbsp;&nbsp;field_kwargs:&nbsp;the&nbsp;kwargs&nbsp;passed&nbsp;to&nbsp;instantiate&nbsp;the&nbsp;field<br>
+&nbsp;&nbsp;&nbsp;&nbsp;empty_value:&nbsp;the&nbsp;expected&nbsp;clean&nbsp;output&nbsp;for&nbsp;inputs&nbsp;in&nbsp;empty_values</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertFormError"><strong>assertFormError</strong></a>(self, response, form, field, errors, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;form&nbsp;used&nbsp;to&nbsp;render&nbsp;the&nbsp;response&nbsp;has&nbsp;a&nbsp;specific&nbsp;field<br>
+error.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertFormsetError"><strong>assertFormsetError</strong></a>(self, response, formset, form_index, field, errors, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;formset&nbsp;used&nbsp;to&nbsp;render&nbsp;the&nbsp;response&nbsp;has&nbsp;a&nbsp;specific&nbsp;error.<br>
+&nbsp;<br>
+For&nbsp;field&nbsp;errors,&nbsp;specify&nbsp;the&nbsp;``form_index``&nbsp;and&nbsp;the&nbsp;``field``.<br>
+For&nbsp;non-field&nbsp;errors,&nbsp;specify&nbsp;the&nbsp;``form_index``&nbsp;and&nbsp;the&nbsp;``field``&nbsp;as<br>
+None.<br>
+For&nbsp;non-form&nbsp;errors,&nbsp;specify&nbsp;``form_index``&nbsp;as&nbsp;None&nbsp;and&nbsp;the&nbsp;``field``<br>
+as&nbsp;None.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertHTMLEqual"><strong>assertHTMLEqual</strong></a>(self, html1, html2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;HTML&nbsp;snippets&nbsp;are&nbsp;semantically&nbsp;the&nbsp;same.<br>
+Whitespace&nbsp;in&nbsp;most&nbsp;cases&nbsp;is&nbsp;ignored,&nbsp;and&nbsp;attribute&nbsp;ordering&nbsp;is&nbsp;not<br>
+significant.&nbsp;The&nbsp;passed-in&nbsp;arguments&nbsp;must&nbsp;be&nbsp;valid&nbsp;HTML.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertHTMLNotEqual"><strong>assertHTMLNotEqual</strong></a>(self, html1, html2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;HTML&nbsp;snippets&nbsp;are&nbsp;not&nbsp;semantically&nbsp;equivalent.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertInHTML"><strong>assertInHTML</strong></a>(self, needle, haystack, count=None, msg_prefix='')</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertJSONEqual"><strong>assertJSONEqual</strong></a>(self, raw, expected_data, msg=None)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertNotContains"><strong>assertNotContains</strong></a>(self, response, text, status_code=200, msg_prefix='', html=False)</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;response&nbsp;indicates&nbsp;that&nbsp;some&nbsp;content&nbsp;was&nbsp;retrieved<br>
+successfully,&nbsp;(i.e.,&nbsp;the&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;was&nbsp;as&nbsp;expected),&nbsp;and&nbsp;that<br>
+``text``&nbsp;doesn't&nbsp;occurs&nbsp;in&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;response.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertRaisesMessage"><strong>assertRaisesMessage</strong></a>(self, expected_exception, expected_message, callable_obj=None, *args, **kwargs)</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;message&nbsp;in&nbsp;a&nbsp;raised&nbsp;exception&nbsp;matches&nbsp;the&nbsp;passed<br>
+value.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_exception:&nbsp;Exception&nbsp;class&nbsp;expected&nbsp;to&nbsp;be&nbsp;raised.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_message:&nbsp;expected&nbsp;error&nbsp;message&nbsp;string&nbsp;value.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable_obj:&nbsp;Function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;Extra&nbsp;args.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Extra&nbsp;kwargs.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertRedirects"><strong>assertRedirects</strong></a>(self, response, expected_url, status_code=302, target_status_code=200, host=None, msg_prefix='', fetch_redirect_response=True)</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;response&nbsp;redirected&nbsp;to&nbsp;a&nbsp;specific&nbsp;URL,&nbsp;and&nbsp;that&nbsp;the<br>
+redirect&nbsp;URL&nbsp;can&nbsp;be&nbsp;loaded.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;assertRedirects&nbsp;won't&nbsp;work&nbsp;for&nbsp;external&nbsp;links&nbsp;since&nbsp;it&nbsp;uses<br>
+TestClient&nbsp;to&nbsp;do&nbsp;a&nbsp;request&nbsp;(use&nbsp;fetch_redirect_response=False&nbsp;to&nbsp;check<br>
+such&nbsp;links&nbsp;without&nbsp;fetching&nbsp;them).</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertTemplateNotUsed"><strong>assertTemplateNotUsed</strong></a>(self, response=None, template_name=None, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;template&nbsp;with&nbsp;the&nbsp;provided&nbsp;name&nbsp;was&nbsp;NOT&nbsp;used&nbsp;in<br>
+rendering&nbsp;the&nbsp;response.&nbsp;Also&nbsp;usable&nbsp;as&nbsp;context&nbsp;manager.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertTemplateUsed"><strong>assertTemplateUsed</strong></a>(self, response=None, template_name=None, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;template&nbsp;with&nbsp;the&nbsp;provided&nbsp;name&nbsp;was&nbsp;used&nbsp;in&nbsp;rendering<br>
+the&nbsp;response.&nbsp;Also&nbsp;usable&nbsp;as&nbsp;context&nbsp;manager.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertXMLEqual"><strong>assertXMLEqual</strong></a>(self, xml1, xml2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;XML&nbsp;snippets&nbsp;are&nbsp;semantically&nbsp;the&nbsp;same.<br>
+Whitespace&nbsp;in&nbsp;most&nbsp;cases&nbsp;is&nbsp;ignored,&nbsp;and&nbsp;attribute&nbsp;ordering&nbsp;is&nbsp;not<br>
+significant.&nbsp;The&nbsp;passed-in&nbsp;arguments&nbsp;must&nbsp;be&nbsp;valid&nbsp;XML.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertXMLNotEqual"><strong>assertXMLNotEqual</strong></a>(self, xml1, xml2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;XML&nbsp;snippets&nbsp;are&nbsp;not&nbsp;semantically&nbsp;equivalent.<br>
+Whitespace&nbsp;in&nbsp;most&nbsp;cases&nbsp;is&nbsp;ignored,&nbsp;and&nbsp;attribute&nbsp;ordering&nbsp;is&nbsp;not<br>
+significant.&nbsp;The&nbsp;passed-in&nbsp;arguments&nbsp;must&nbsp;be&nbsp;valid&nbsp;XML.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-modify_settings"><strong>modify_settings</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;context&nbsp;manager&nbsp;that&nbsp;temporarily&nbsp;applies&nbsp;changes&nbsp;a&nbsp;list&nbsp;setting&nbsp;and<br>
+reverts&nbsp;back&nbsp;to&nbsp;the&nbsp;original&nbsp;value&nbsp;when&nbsp;exiting&nbsp;the&nbsp;context.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-settings"><strong>settings</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;context&nbsp;manager&nbsp;that&nbsp;temporarily&nbsp;sets&nbsp;a&nbsp;setting&nbsp;and&nbsp;reverts&nbsp;to&nbsp;the&nbsp;original&nbsp;value&nbsp;when&nbsp;exiting&nbsp;the&nbsp;context.</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="django.test.testcases.html#SimpleTestCase">django.test.testcases.SimpleTestCase</a>:<br>
+<dl><dt><strong>client_class</strong> = &lt;class 'django.test.client.Client'&gt;<dd><tt>A&nbsp;class&nbsp;that&nbsp;can&nbsp;act&nbsp;as&nbsp;a&nbsp;client&nbsp;for&nbsp;testing&nbsp;purposes.<br>
+&nbsp;<br>
+It&nbsp;allows&nbsp;the&nbsp;user&nbsp;to&nbsp;compose&nbsp;GET&nbsp;and&nbsp;POST&nbsp;requests,&nbsp;and<br>
+obtain&nbsp;the&nbsp;response&nbsp;that&nbsp;the&nbsp;server&nbsp;gave&nbsp;to&nbsp;those&nbsp;requests.<br>
+The&nbsp;server&nbsp;Response&nbsp;objects&nbsp;are&nbsp;annotated&nbsp;with&nbsp;the&nbsp;details<br>
+of&nbsp;the&nbsp;contexts&nbsp;and&nbsp;templates&nbsp;that&nbsp;were&nbsp;rendered&nbsp;during&nbsp;the<br>
+process&nbsp;of&nbsp;serving&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+Client&nbsp;objects&nbsp;are&nbsp;stateful&nbsp;-&nbsp;they&nbsp;will&nbsp;retain&nbsp;cookie&nbsp;(and<br>
+thus&nbsp;session)&nbsp;details&nbsp;for&nbsp;the&nbsp;lifetime&nbsp;of&nbsp;the&nbsp;Client&nbsp;instance.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;not&nbsp;intended&nbsp;as&nbsp;a&nbsp;replacement&nbsp;for&nbsp;Twill/Selenium&nbsp;or<br>
+the&nbsp;like&nbsp;-&nbsp;it&nbsp;is&nbsp;here&nbsp;to&nbsp;allow&nbsp;testing&nbsp;against&nbsp;the<br>
+contexts&nbsp;and&nbsp;templates&nbsp;produced&nbsp;by&nbsp;a&nbsp;view,&nbsp;rather&nbsp;than&nbsp;the<br>
+HTML&nbsp;rendered&nbsp;to&nbsp;the&nbsp;end-user.</tt></dl>
+
+<hr>
+Methods inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><a name="SearchFormTest-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-__init__"><strong>__init__</strong></a>(self, methodName='runTest')</dt><dd><tt>Create&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;class&nbsp;that&nbsp;will&nbsp;use&nbsp;the&nbsp;named&nbsp;test<br>
+method&nbsp;when&nbsp;executed.&nbsp;Raises&nbsp;a&nbsp;ValueError&nbsp;if&nbsp;the&nbsp;instance&nbsp;does<br>
+not&nbsp;have&nbsp;a&nbsp;method&nbsp;with&nbsp;the&nbsp;specified&nbsp;name.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-addCleanup"><strong>addCleanup</strong></a>(self, function, *args, **kwargs)</dt><dd><tt>Add&nbsp;a&nbsp;function,&nbsp;with&nbsp;arguments,&nbsp;to&nbsp;be&nbsp;called&nbsp;when&nbsp;the&nbsp;test&nbsp;is<br>
+completed.&nbsp;Functions&nbsp;added&nbsp;are&nbsp;called&nbsp;on&nbsp;a&nbsp;LIFO&nbsp;basis&nbsp;and&nbsp;are<br>
+called&nbsp;after&nbsp;tearDown&nbsp;on&nbsp;test&nbsp;failure&nbsp;or&nbsp;success.<br>
+&nbsp;<br>
+Cleanup&nbsp;items&nbsp;are&nbsp;called&nbsp;even&nbsp;if&nbsp;setUp&nbsp;fails&nbsp;(unlike&nbsp;tearDown).</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-addTypeEqualityFunc"><strong>addTypeEqualityFunc</strong></a>(self, typeobj, function)</dt><dd><tt>Add&nbsp;a&nbsp;type&nbsp;specific&nbsp;assertEqual&nbsp;style&nbsp;function&nbsp;to&nbsp;compare&nbsp;a&nbsp;type.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;is&nbsp;for&nbsp;use&nbsp;by&nbsp;<a href="django.test.testcases.html#TestCase">TestCase</a>&nbsp;subclasses&nbsp;that&nbsp;need&nbsp;to&nbsp;register<br>
+their&nbsp;own&nbsp;type&nbsp;equality&nbsp;functions&nbsp;to&nbsp;provide&nbsp;nicer&nbsp;error&nbsp;messages.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;typeobj:&nbsp;The&nbsp;data&nbsp;type&nbsp;to&nbsp;call&nbsp;this&nbsp;function&nbsp;on&nbsp;when&nbsp;both&nbsp;values<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;in&nbsp;<a href="#SearchFormTest-assertEqual">assertEqual</a>().<br>
+&nbsp;&nbsp;&nbsp;&nbsp;function:&nbsp;The&nbsp;callable&nbsp;taking&nbsp;two&nbsp;arguments&nbsp;and&nbsp;an&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msg=&nbsp;argument&nbsp;that&nbsp;raises&nbsp;self.<strong>failureException</strong>&nbsp;with&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;useful&nbsp;error&nbsp;message&nbsp;when&nbsp;the&nbsp;two&nbsp;arguments&nbsp;are&nbsp;not&nbsp;equal.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertAlmostEqual"><strong>assertAlmostEqual</strong></a>(self, first, second, places=None, msg=None, delta=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero,&nbsp;or&nbsp;by&nbsp;comparing&nbsp;that&nbsp;the<br>
+between&nbsp;the&nbsp;two&nbsp;objects&nbsp;is&nbsp;more&nbsp;than&nbsp;the&nbsp;given&nbsp;delta.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;two&nbsp;objects&nbsp;compare&nbsp;equal&nbsp;then&nbsp;they&nbsp;will&nbsp;automatically<br>
+compare&nbsp;almost&nbsp;equal.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertAlmostEquals"><strong>assertAlmostEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertCountEqual"><strong>assertCountEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>An&nbsp;unordered&nbsp;sequence&nbsp;comparison&nbsp;asserting&nbsp;that&nbsp;the&nbsp;same&nbsp;elements,<br>
+regardless&nbsp;of&nbsp;order.&nbsp;&nbsp;If&nbsp;the&nbsp;same&nbsp;element&nbsp;occurs&nbsp;more&nbsp;than&nbsp;once,<br>
+it&nbsp;verifies&nbsp;that&nbsp;the&nbsp;elements&nbsp;occur&nbsp;the&nbsp;same&nbsp;number&nbsp;of&nbsp;times.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#SearchFormTest-assertEqual">assertEqual</a>(Counter(list(first)),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Counter(list(second)))<br>
+&nbsp;<br>
+&nbsp;Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;[0,&nbsp;1,&nbsp;1]&nbsp;and&nbsp;[1,&nbsp;0,&nbsp;1]&nbsp;compare&nbsp;equal.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;[0,&nbsp;0,&nbsp;1]&nbsp;and&nbsp;[0,&nbsp;1]&nbsp;compare&nbsp;unequal.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertDictContainsSubset"><strong>assertDictContainsSubset</strong></a>(self, subset, dictionary, msg=None)</dt><dd><tt>Checks&nbsp;whether&nbsp;dictionary&nbsp;is&nbsp;a&nbsp;superset&nbsp;of&nbsp;subset.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertDictEqual"><strong>assertDictEqual</strong></a>(self, d1, d2, msg=None)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertEqual"><strong>assertEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertEquals"><strong>assertEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertFalse"><strong>assertFalse</strong></a>(self, expr, msg=None)</dt><dd><tt>Check&nbsp;that&nbsp;the&nbsp;expression&nbsp;is&nbsp;false.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertGreater"><strong>assertGreater</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(a&nbsp;&gt;&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertGreaterEqual"><strong>assertGreaterEqual</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(a&nbsp;&gt;=&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertIn"><strong>assertIn</strong></a>(self, member, container, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(a&nbsp;in&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertIs"><strong>assertIs</strong></a>(self, expr1, expr2, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(a&nbsp;is&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertIsInstance"><strong>assertIsInstance</strong></a>(self, obj, cls, msg=None)</dt><dd><tt>Same&nbsp;as&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(isinstance(obj,&nbsp;cls)),&nbsp;with&nbsp;a&nbsp;nicer<br>
+default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertIsNone"><strong>assertIsNone</strong></a>(self, obj, msg=None)</dt><dd><tt>Same&nbsp;as&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(obj&nbsp;is&nbsp;None),&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertIsNot"><strong>assertIsNot</strong></a>(self, expr1, expr2, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(a&nbsp;is&nbsp;not&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertIsNotNone"><strong>assertIsNotNone</strong></a>(self, obj, msg=None)</dt><dd><tt>Included&nbsp;for&nbsp;symmetry&nbsp;with&nbsp;assertIsNone.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertLess"><strong>assertLess</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(a&nbsp;&lt;&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertLessEqual"><strong>assertLessEqual</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(a&nbsp;&lt;=&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertListEqual"><strong>assertListEqual</strong></a>(self, list1, list2, msg=None)</dt><dd><tt>A&nbsp;list-specific&nbsp;equality&nbsp;assertion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list1:&nbsp;The&nbsp;first&nbsp;list&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list2:&nbsp;The&nbsp;second&nbsp;list&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertLogs"><strong>assertLogs</strong></a>(self, logger=None, level=None)</dt><dd><tt>Fail&nbsp;unless&nbsp;a&nbsp;log&nbsp;message&nbsp;of&nbsp;level&nbsp;*level*&nbsp;or&nbsp;higher&nbsp;is&nbsp;emitted<br>
+on&nbsp;*logger_name*&nbsp;or&nbsp;its&nbsp;children.&nbsp;&nbsp;If&nbsp;omitted,&nbsp;*level*&nbsp;defaults&nbsp;to<br>
+INFO&nbsp;and&nbsp;*logger*&nbsp;defaults&nbsp;to&nbsp;the&nbsp;root&nbsp;logger.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;must&nbsp;be&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;manager,&nbsp;and&nbsp;will&nbsp;yield<br>
+a&nbsp;recording&nbsp;object&nbsp;with&nbsp;two&nbsp;attributes:&nbsp;`output`&nbsp;and&nbsp;`records`.<br>
+At&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;context&nbsp;manager,&nbsp;the&nbsp;`output`&nbsp;attribute&nbsp;will<br>
+be&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;matching&nbsp;formatted&nbsp;log&nbsp;messages&nbsp;and&nbsp;the<br>
+`records`&nbsp;attribute&nbsp;will&nbsp;be&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;corresponding&nbsp;LogRecord<br>
+objects.<br>
+&nbsp;<br>
+Example::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#SearchFormTest-assertLogs">assertLogs</a>('foo',&nbsp;level='INFO')&nbsp;as&nbsp;cm:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.getLogger('foo').info('first&nbsp;message')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.getLogger('foo.bar').error('second&nbsp;message')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#SearchFormTest-assertEqual">assertEqual</a>(cm.output,&nbsp;['INFO:foo:first&nbsp;message',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ERROR:foo.bar:second&nbsp;message'])</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertMultiLineEqual"><strong>assertMultiLineEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>Assert&nbsp;that&nbsp;two&nbsp;multi-line&nbsp;strings&nbsp;are&nbsp;equal.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertNotAlmostEqual"><strong>assertNotAlmostEqual</strong></a>(self, first, second, places=None, msg=None, delta=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero,&nbsp;or&nbsp;by&nbsp;comparing&nbsp;that&nbsp;the<br>
+between&nbsp;the&nbsp;two&nbsp;objects&nbsp;is&nbsp;less&nbsp;than&nbsp;the&nbsp;given&nbsp;delta.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).<br>
+&nbsp;<br>
+Objects&nbsp;that&nbsp;are&nbsp;equal&nbsp;automatically&nbsp;fail.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertNotAlmostEquals"><strong>assertNotAlmostEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertNotEqual"><strong>assertNotEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'!='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertNotEquals"><strong>assertNotEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertNotIn"><strong>assertNotIn</strong></a>(self, member, container, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#SearchFormTest-assertTrue">assertTrue</a>(a&nbsp;not&nbsp;in&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertNotIsInstance"><strong>assertNotIsInstance</strong></a>(self, obj, cls, msg=None)</dt><dd><tt>Included&nbsp;for&nbsp;symmetry&nbsp;with&nbsp;assertIsInstance.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertNotRegex"><strong>assertNotRegex</strong></a>(self, text, unexpected_regex, msg=None)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;if&nbsp;the&nbsp;text&nbsp;matches&nbsp;the&nbsp;regular&nbsp;expression.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertRaises"><strong>assertRaises</strong></a>(self, excClass, callableObj=None, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;an&nbsp;exception&nbsp;of&nbsp;class&nbsp;excClass&nbsp;is&nbsp;raised<br>
+by&nbsp;callableObj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;exception&nbsp;is<br>
+raised,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;caught,&nbsp;and&nbsp;the&nbsp;test&nbsp;case&nbsp;will&nbsp;be<br>
+deemed&nbsp;to&nbsp;have&nbsp;suffered&nbsp;an&nbsp;error,&nbsp;exactly&nbsp;as&nbsp;for&nbsp;an<br>
+unexpected&nbsp;exception.<br>
+&nbsp;<br>
+If&nbsp;called&nbsp;with&nbsp;callableObj&nbsp;omitted&nbsp;or&nbsp;None,&nbsp;will&nbsp;return&nbsp;a<br>
+context&nbsp;object&nbsp;used&nbsp;like&nbsp;this::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#SearchFormTest-assertRaises">assertRaises</a>(SomeException):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;<br>
+An&nbsp;optional&nbsp;keyword&nbsp;argument&nbsp;'msg'&nbsp;can&nbsp;be&nbsp;provided&nbsp;when&nbsp;assertRaises<br>
+is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;object.<br>
+&nbsp;<br>
+The&nbsp;context&nbsp;manager&nbsp;keeps&nbsp;a&nbsp;reference&nbsp;to&nbsp;the&nbsp;exception&nbsp;as<br>
+the&nbsp;'exception'&nbsp;attribute.&nbsp;This&nbsp;allows&nbsp;you&nbsp;to&nbsp;inspect&nbsp;the<br>
+exception&nbsp;after&nbsp;the&nbsp;assertion::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#SearchFormTest-assertRaises">assertRaises</a>(SomeException)&nbsp;as&nbsp;cm:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the_exception&nbsp;=&nbsp;cm.exception<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#SearchFormTest-assertEqual">assertEqual</a>(the_exception.error_code,&nbsp;3)</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertRaisesRegex"><strong>assertRaisesRegex</strong></a>(self, expected_exception, expected_regex, callable_obj=None, *args, **kwargs)</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;message&nbsp;in&nbsp;a&nbsp;raised&nbsp;exception&nbsp;matches&nbsp;a&nbsp;regex.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_exception:&nbsp;Exception&nbsp;class&nbsp;expected&nbsp;to&nbsp;be&nbsp;raised.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_regex:&nbsp;Regex&nbsp;(re&nbsp;pattern&nbsp;object&nbsp;or&nbsp;string)&nbsp;expected<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;error&nbsp;message.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable_obj:&nbsp;Function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;used&nbsp;in&nbsp;case&nbsp;of&nbsp;failure.&nbsp;Can&nbsp;only&nbsp;be&nbsp;used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when&nbsp;assertRaisesRegex&nbsp;is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;manager.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;Extra&nbsp;args.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Extra&nbsp;kwargs.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertRaisesRegexp"><strong>assertRaisesRegexp</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertRegex"><strong>assertRegex</strong></a>(self, text, expected_regex, msg=None)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;unless&nbsp;the&nbsp;text&nbsp;matches&nbsp;the&nbsp;regular&nbsp;expression.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertRegexpMatches"><strong>assertRegexpMatches</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-assertSequenceEqual"><strong>assertSequenceEqual</strong></a>(self, seq1, seq2, msg=None, seq_type=None)</dt><dd><tt>An&nbsp;equality&nbsp;assertion&nbsp;for&nbsp;ordered&nbsp;sequences&nbsp;(like&nbsp;lists&nbsp;and&nbsp;tuples).<br>
+&nbsp;<br>
+For&nbsp;the&nbsp;purposes&nbsp;of&nbsp;this&nbsp;function,&nbsp;a&nbsp;valid&nbsp;ordered&nbsp;sequence&nbsp;type&nbsp;is&nbsp;one<br>
+which&nbsp;can&nbsp;be&nbsp;indexed,&nbsp;has&nbsp;a&nbsp;length,&nbsp;and&nbsp;has&nbsp;an&nbsp;equality&nbsp;operator.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq1:&nbsp;The&nbsp;first&nbsp;sequence&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq2:&nbsp;The&nbsp;second&nbsp;sequence&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq_type:&nbsp;The&nbsp;expected&nbsp;datatype&nbsp;of&nbsp;the&nbsp;sequences,&nbsp;or&nbsp;None&nbsp;if&nbsp;no<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;datatype&nbsp;should&nbsp;be&nbsp;enforced.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertSetEqual"><strong>assertSetEqual</strong></a>(self, set1, set2, msg=None)</dt><dd><tt>A&nbsp;set-specific&nbsp;equality&nbsp;assertion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;set1:&nbsp;The&nbsp;first&nbsp;set&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;set2:&nbsp;The&nbsp;second&nbsp;set&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.<br>
+&nbsp;<br>
+assertSetEqual&nbsp;uses&nbsp;ducktyping&nbsp;to&nbsp;support&nbsp;different&nbsp;types&nbsp;of&nbsp;sets,&nbsp;and<br>
+is&nbsp;optimized&nbsp;for&nbsp;sets&nbsp;specifically&nbsp;(parameters&nbsp;must&nbsp;support&nbsp;a<br>
+difference&nbsp;method).</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertTrue"><strong>assertTrue</strong></a>(self, expr, msg=None)</dt><dd><tt>Check&nbsp;that&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertTupleEqual"><strong>assertTupleEqual</strong></a>(self, tuple1, tuple2, msg=None)</dt><dd><tt>A&nbsp;tuple-specific&nbsp;equality&nbsp;assertion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple1:&nbsp;The&nbsp;first&nbsp;tuple&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple2:&nbsp;The&nbsp;second&nbsp;tuple&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertWarns"><strong>assertWarns</strong></a>(self, expected_warning, callable_obj=None, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;a&nbsp;warning&nbsp;of&nbsp;class&nbsp;warnClass&nbsp;is&nbsp;triggered<br>
+by&nbsp;callable_obj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;warning&nbsp;is<br>
+triggered,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;handled:&nbsp;depending&nbsp;on&nbsp;the&nbsp;other<br>
+warning&nbsp;filtering&nbsp;rules&nbsp;in&nbsp;effect,&nbsp;it&nbsp;might&nbsp;be&nbsp;silenced,&nbsp;printed<br>
+out,&nbsp;or&nbsp;raised&nbsp;as&nbsp;an&nbsp;exception.<br>
+&nbsp;<br>
+If&nbsp;called&nbsp;with&nbsp;callable_obj&nbsp;omitted&nbsp;or&nbsp;None,&nbsp;will&nbsp;return&nbsp;a<br>
+context&nbsp;object&nbsp;used&nbsp;like&nbsp;this::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#SearchFormTest-assertWarns">assertWarns</a>(SomeWarning):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;<br>
+An&nbsp;optional&nbsp;keyword&nbsp;argument&nbsp;'msg'&nbsp;can&nbsp;be&nbsp;provided&nbsp;when&nbsp;assertWarns<br>
+is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;object.<br>
+&nbsp;<br>
+The&nbsp;context&nbsp;manager&nbsp;keeps&nbsp;a&nbsp;reference&nbsp;to&nbsp;the&nbsp;first&nbsp;matching<br>
+warning&nbsp;as&nbsp;the&nbsp;'warning'&nbsp;attribute;&nbsp;similarly,&nbsp;the&nbsp;'filename'<br>
+and&nbsp;'lineno'&nbsp;attributes&nbsp;give&nbsp;you&nbsp;information&nbsp;about&nbsp;the&nbsp;line<br>
+of&nbsp;Python&nbsp;code&nbsp;from&nbsp;which&nbsp;the&nbsp;warning&nbsp;was&nbsp;triggered.<br>
+This&nbsp;allows&nbsp;you&nbsp;to&nbsp;inspect&nbsp;the&nbsp;warning&nbsp;after&nbsp;the&nbsp;assertion::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#SearchFormTest-assertWarns">assertWarns</a>(SomeWarning)&nbsp;as&nbsp;cm:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the_warning&nbsp;=&nbsp;cm.warning<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#SearchFormTest-assertEqual">assertEqual</a>(the_warning.some_attribute,&nbsp;147)</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assertWarnsRegex"><strong>assertWarnsRegex</strong></a>(self, expected_warning, expected_regex, callable_obj=None, *args, **kwargs)</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;message&nbsp;in&nbsp;a&nbsp;triggered&nbsp;warning&nbsp;matches&nbsp;a&nbsp;regexp.<br>
+Basic&nbsp;functioning&nbsp;is&nbsp;similar&nbsp;to&nbsp;<a href="#SearchFormTest-assertWarns">assertWarns</a>()&nbsp;with&nbsp;the&nbsp;addition<br>
+that&nbsp;only&nbsp;warnings&nbsp;whose&nbsp;messages&nbsp;also&nbsp;match&nbsp;the&nbsp;regular&nbsp;expression<br>
+are&nbsp;considered&nbsp;successful&nbsp;matches.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_warning:&nbsp;Warning&nbsp;class&nbsp;expected&nbsp;to&nbsp;be&nbsp;triggered.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_regex:&nbsp;Regex&nbsp;(re&nbsp;pattern&nbsp;object&nbsp;or&nbsp;string)&nbsp;expected<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;error&nbsp;message.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable_obj:&nbsp;Function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;used&nbsp;in&nbsp;case&nbsp;of&nbsp;failure.&nbsp;Can&nbsp;only&nbsp;be&nbsp;used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when&nbsp;assertWarnsRegex&nbsp;is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;manager.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;Extra&nbsp;args.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Extra&nbsp;kwargs.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-assert_"><strong>assert_</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-countTestCases"><strong>countTestCases</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-debug"><strong>debug</strong></a>(self)</dt><dd><tt>Run&nbsp;the&nbsp;test&nbsp;without&nbsp;collecting&nbsp;errors&nbsp;in&nbsp;a&nbsp;TestResult</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-defaultTestResult"><strong>defaultTestResult</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-doCleanups"><strong>doCleanups</strong></a>(self)</dt><dd><tt>Execute&nbsp;all&nbsp;cleanup&nbsp;functions.&nbsp;Normally&nbsp;called&nbsp;for&nbsp;you&nbsp;after<br>
+tearDown.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-fail"><strong>fail</strong></a>(self, msg=None)</dt><dd><tt>Fail&nbsp;immediately,&nbsp;with&nbsp;the&nbsp;given&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-failIf"><strong>failIf</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-failIfAlmostEqual"><strong>failIfAlmostEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-failIfEqual"><strong>failIfEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-failUnless"><strong>failUnless</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-failUnlessAlmostEqual"><strong>failUnlessAlmostEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-failUnlessEqual"><strong>failUnlessEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-failUnlessRaises"><strong>failUnlessRaises</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-id"><strong>id</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-run"><strong>run</strong></a>(self, result=None)</dt></dl>
+
+<dl><dt><a name="SearchFormTest-setUp"><strong>setUp</strong></a>(self)</dt><dd><tt>Hook&nbsp;method&nbsp;for&nbsp;setting&nbsp;up&nbsp;the&nbsp;test&nbsp;fixture&nbsp;before&nbsp;exercising&nbsp;it.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-shortDescription"><strong>shortDescription</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;one-line&nbsp;description&nbsp;of&nbsp;the&nbsp;test,&nbsp;or&nbsp;None&nbsp;if&nbsp;no<br>
+description&nbsp;has&nbsp;been&nbsp;provided.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;returns&nbsp;the&nbsp;first&nbsp;line&nbsp;of<br>
+the&nbsp;specified&nbsp;test&nbsp;method's&nbsp;docstring.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-skipTest"><strong>skipTest</strong></a>(self, reason)</dt><dd><tt>Skip&nbsp;this&nbsp;test.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-subTest"><strong>subTest</strong></a>(self, msg=None, **params)</dt><dd><tt>Return&nbsp;a&nbsp;context&nbsp;manager&nbsp;that&nbsp;will&nbsp;return&nbsp;the&nbsp;enclosed&nbsp;block<br>
+of&nbsp;code&nbsp;in&nbsp;a&nbsp;subtest&nbsp;identified&nbsp;by&nbsp;the&nbsp;optional&nbsp;message&nbsp;and<br>
+keyword&nbsp;parameters.&nbsp;&nbsp;A&nbsp;failure&nbsp;in&nbsp;the&nbsp;subtest&nbsp;marks&nbsp;the&nbsp;test<br>
+case&nbsp;as&nbsp;failed&nbsp;but&nbsp;resumes&nbsp;execution&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;enclosed<br>
+block,&nbsp;allowing&nbsp;further&nbsp;test&nbsp;code&nbsp;to&nbsp;be&nbsp;executed.</tt></dd></dl>
+
+<dl><dt><a name="SearchFormTest-tearDown"><strong>tearDown</strong></a>(self)</dt><dd><tt>Hook&nbsp;method&nbsp;for&nbsp;deconstructing&nbsp;the&nbsp;test&nbsp;fixture&nbsp;after&nbsp;testing&nbsp;it.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><a name="SearchFormTest-tearDownClass"><strong>tearDownClass</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Hook&nbsp;method&nbsp;for&nbsp;deconstructing&nbsp;the&nbsp;class&nbsp;fixture&nbsp;after&nbsp;running&nbsp;all&nbsp;tests&nbsp;in&nbsp;the&nbsp;class.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><strong>failureException</strong> = &lt;class 'AssertionError'&gt;<dd><tt>Assertion&nbsp;failed.</tt></dl>
+
+<dl><dt><strong>longMessage</strong> = True</dl>
+
+<dl><dt><strong>maxDiff</strong> = 640</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ViewTest">class <strong>ViewTest</strong></a>(<a href="django.test.testcases.html#TestCase">django.test.testcases.TestCase</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Tests&nbsp;for&nbsp;the&nbsp;application&nbsp;views.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="app.tests.html#ViewTest">ViewTest</a></dd>
+<dd><a href="django.test.testcases.html#TestCase">django.test.testcases.TestCase</a></dd>
+<dd><a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a></dd>
+<dd><a href="django.test.testcases.html#SimpleTestCase">django.test.testcases.SimpleTestCase</a></dd>
+<dd><a href="unittest.case.html#TestCase">unittest.case.TestCase</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ViewTest-test_about"><strong>test_about</strong></a>(self)</dt><dd><tt>Tests&nbsp;the&nbsp;about&nbsp;page.</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="ViewTest-setUpClass"><strong>setUpClass</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>#&nbsp;Django&nbsp;1.7&nbsp;requires&nbsp;an&nbsp;explicit&nbsp;setup()&nbsp;when&nbsp;running&nbsp;tests&nbsp;in&nbsp;PTVS</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a>:<br>
+<dl><dt><a name="ViewTest-assertNumQueries"><strong>assertNumQueries</strong></a>(self, num, func=None, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-assertQuerysetEqual"><strong>assertQuerysetEqual</strong></a>(self, qs, values, transform=<built-in function repr>, ordered=True, msg=None)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="django.test.testcases.html#TransactionTestCase">django.test.testcases.TransactionTestCase</a>:<br>
+<dl><dt><strong>available_apps</strong> = None</dl>
+
+<dl><dt><strong>fixtures</strong> = None</dl>
+
+<dl><dt><strong>reset_sequences</strong> = False</dl>
+
+<dl><dt><strong>serialized_rollback</strong> = False</dl>
+
+<hr>
+Methods inherited from <a href="django.test.testcases.html#SimpleTestCase">django.test.testcases.SimpleTestCase</a>:<br>
+<dl><dt><a name="ViewTest-__call__"><strong>__call__</strong></a>(self, result=None)</dt><dd><tt>Wrapper&nbsp;around&nbsp;default&nbsp;__call__&nbsp;method&nbsp;to&nbsp;perform&nbsp;common&nbsp;Django&nbsp;test<br>
+set&nbsp;up.&nbsp;This&nbsp;means&nbsp;that&nbsp;user-defined&nbsp;Test&nbsp;Cases&nbsp;aren't&nbsp;required&nbsp;to<br>
+include&nbsp;a&nbsp;call&nbsp;to&nbsp;super().<a href="#ViewTest-setUp">setUp</a>().</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertContains"><strong>assertContains</strong></a>(self, response, text, count=None, status_code=200, msg_prefix='', html=False)</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;response&nbsp;indicates&nbsp;that&nbsp;some&nbsp;content&nbsp;was&nbsp;retrieved<br>
+successfully,&nbsp;(i.e.,&nbsp;the&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;was&nbsp;as&nbsp;expected),&nbsp;and&nbsp;that<br>
+``text``&nbsp;occurs&nbsp;``count``&nbsp;times&nbsp;in&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;response.<br>
+If&nbsp;``count``&nbsp;is&nbsp;None,&nbsp;the&nbsp;count&nbsp;doesn't&nbsp;matter&nbsp;-&nbsp;the&nbsp;assertion&nbsp;is&nbsp;true<br>
+if&nbsp;the&nbsp;text&nbsp;occurs&nbsp;at&nbsp;least&nbsp;once&nbsp;in&nbsp;the&nbsp;response.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertFieldOutput"><strong>assertFieldOutput</strong></a>(self, fieldclass, valid, invalid, field_args=None, field_kwargs=None, empty_value='')</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;form&nbsp;field&nbsp;behaves&nbsp;correctly&nbsp;with&nbsp;various&nbsp;inputs.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fieldclass:&nbsp;the&nbsp;class&nbsp;of&nbsp;the&nbsp;field&nbsp;to&nbsp;be&nbsp;tested.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;valid:&nbsp;a&nbsp;dictionary&nbsp;mapping&nbsp;valid&nbsp;inputs&nbsp;to&nbsp;their&nbsp;expected<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cleaned&nbsp;values.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;invalid:&nbsp;a&nbsp;dictionary&nbsp;mapping&nbsp;invalid&nbsp;inputs&nbsp;to&nbsp;one&nbsp;or&nbsp;more<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raised&nbsp;error&nbsp;messages.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;field_args:&nbsp;the&nbsp;args&nbsp;passed&nbsp;to&nbsp;instantiate&nbsp;the&nbsp;field<br>
+&nbsp;&nbsp;&nbsp;&nbsp;field_kwargs:&nbsp;the&nbsp;kwargs&nbsp;passed&nbsp;to&nbsp;instantiate&nbsp;the&nbsp;field<br>
+&nbsp;&nbsp;&nbsp;&nbsp;empty_value:&nbsp;the&nbsp;expected&nbsp;clean&nbsp;output&nbsp;for&nbsp;inputs&nbsp;in&nbsp;empty_values</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertFormError"><strong>assertFormError</strong></a>(self, response, form, field, errors, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;form&nbsp;used&nbsp;to&nbsp;render&nbsp;the&nbsp;response&nbsp;has&nbsp;a&nbsp;specific&nbsp;field<br>
+error.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertFormsetError"><strong>assertFormsetError</strong></a>(self, response, formset, form_index, field, errors, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;formset&nbsp;used&nbsp;to&nbsp;render&nbsp;the&nbsp;response&nbsp;has&nbsp;a&nbsp;specific&nbsp;error.<br>
+&nbsp;<br>
+For&nbsp;field&nbsp;errors,&nbsp;specify&nbsp;the&nbsp;``form_index``&nbsp;and&nbsp;the&nbsp;``field``.<br>
+For&nbsp;non-field&nbsp;errors,&nbsp;specify&nbsp;the&nbsp;``form_index``&nbsp;and&nbsp;the&nbsp;``field``&nbsp;as<br>
+None.<br>
+For&nbsp;non-form&nbsp;errors,&nbsp;specify&nbsp;``form_index``&nbsp;as&nbsp;None&nbsp;and&nbsp;the&nbsp;``field``<br>
+as&nbsp;None.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertHTMLEqual"><strong>assertHTMLEqual</strong></a>(self, html1, html2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;HTML&nbsp;snippets&nbsp;are&nbsp;semantically&nbsp;the&nbsp;same.<br>
+Whitespace&nbsp;in&nbsp;most&nbsp;cases&nbsp;is&nbsp;ignored,&nbsp;and&nbsp;attribute&nbsp;ordering&nbsp;is&nbsp;not<br>
+significant.&nbsp;The&nbsp;passed-in&nbsp;arguments&nbsp;must&nbsp;be&nbsp;valid&nbsp;HTML.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertHTMLNotEqual"><strong>assertHTMLNotEqual</strong></a>(self, html1, html2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;HTML&nbsp;snippets&nbsp;are&nbsp;not&nbsp;semantically&nbsp;equivalent.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertInHTML"><strong>assertInHTML</strong></a>(self, needle, haystack, count=None, msg_prefix='')</dt></dl>
+
+<dl><dt><a name="ViewTest-assertJSONEqual"><strong>assertJSONEqual</strong></a>(self, raw, expected_data, msg=None)</dt></dl>
+
+<dl><dt><a name="ViewTest-assertNotContains"><strong>assertNotContains</strong></a>(self, response, text, status_code=200, msg_prefix='', html=False)</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;response&nbsp;indicates&nbsp;that&nbsp;some&nbsp;content&nbsp;was&nbsp;retrieved<br>
+successfully,&nbsp;(i.e.,&nbsp;the&nbsp;HTTP&nbsp;status&nbsp;code&nbsp;was&nbsp;as&nbsp;expected),&nbsp;and&nbsp;that<br>
+``text``&nbsp;doesn't&nbsp;occurs&nbsp;in&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;response.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertRaisesMessage"><strong>assertRaisesMessage</strong></a>(self, expected_exception, expected_message, callable_obj=None, *args, **kwargs)</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;message&nbsp;in&nbsp;a&nbsp;raised&nbsp;exception&nbsp;matches&nbsp;the&nbsp;passed<br>
+value.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_exception:&nbsp;Exception&nbsp;class&nbsp;expected&nbsp;to&nbsp;be&nbsp;raised.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_message:&nbsp;expected&nbsp;error&nbsp;message&nbsp;string&nbsp;value.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable_obj:&nbsp;Function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;Extra&nbsp;args.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Extra&nbsp;kwargs.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertRedirects"><strong>assertRedirects</strong></a>(self, response, expected_url, status_code=302, target_status_code=200, host=None, msg_prefix='', fetch_redirect_response=True)</dt><dd><tt>Asserts&nbsp;that&nbsp;a&nbsp;response&nbsp;redirected&nbsp;to&nbsp;a&nbsp;specific&nbsp;URL,&nbsp;and&nbsp;that&nbsp;the<br>
+redirect&nbsp;URL&nbsp;can&nbsp;be&nbsp;loaded.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;assertRedirects&nbsp;won't&nbsp;work&nbsp;for&nbsp;external&nbsp;links&nbsp;since&nbsp;it&nbsp;uses<br>
+TestClient&nbsp;to&nbsp;do&nbsp;a&nbsp;request&nbsp;(use&nbsp;fetch_redirect_response=False&nbsp;to&nbsp;check<br>
+such&nbsp;links&nbsp;without&nbsp;fetching&nbsp;them).</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertTemplateNotUsed"><strong>assertTemplateNotUsed</strong></a>(self, response=None, template_name=None, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;template&nbsp;with&nbsp;the&nbsp;provided&nbsp;name&nbsp;was&nbsp;NOT&nbsp;used&nbsp;in<br>
+rendering&nbsp;the&nbsp;response.&nbsp;Also&nbsp;usable&nbsp;as&nbsp;context&nbsp;manager.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertTemplateUsed"><strong>assertTemplateUsed</strong></a>(self, response=None, template_name=None, msg_prefix='')</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;template&nbsp;with&nbsp;the&nbsp;provided&nbsp;name&nbsp;was&nbsp;used&nbsp;in&nbsp;rendering<br>
+the&nbsp;response.&nbsp;Also&nbsp;usable&nbsp;as&nbsp;context&nbsp;manager.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertXMLEqual"><strong>assertXMLEqual</strong></a>(self, xml1, xml2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;XML&nbsp;snippets&nbsp;are&nbsp;semantically&nbsp;the&nbsp;same.<br>
+Whitespace&nbsp;in&nbsp;most&nbsp;cases&nbsp;is&nbsp;ignored,&nbsp;and&nbsp;attribute&nbsp;ordering&nbsp;is&nbsp;not<br>
+significant.&nbsp;The&nbsp;passed-in&nbsp;arguments&nbsp;must&nbsp;be&nbsp;valid&nbsp;XML.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertXMLNotEqual"><strong>assertXMLNotEqual</strong></a>(self, xml1, xml2, msg=None)</dt><dd><tt>Asserts&nbsp;that&nbsp;two&nbsp;XML&nbsp;snippets&nbsp;are&nbsp;not&nbsp;semantically&nbsp;equivalent.<br>
+Whitespace&nbsp;in&nbsp;most&nbsp;cases&nbsp;is&nbsp;ignored,&nbsp;and&nbsp;attribute&nbsp;ordering&nbsp;is&nbsp;not<br>
+significant.&nbsp;The&nbsp;passed-in&nbsp;arguments&nbsp;must&nbsp;be&nbsp;valid&nbsp;XML.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-modify_settings"><strong>modify_settings</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;context&nbsp;manager&nbsp;that&nbsp;temporarily&nbsp;applies&nbsp;changes&nbsp;a&nbsp;list&nbsp;setting&nbsp;and<br>
+reverts&nbsp;back&nbsp;to&nbsp;the&nbsp;original&nbsp;value&nbsp;when&nbsp;exiting&nbsp;the&nbsp;context.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-settings"><strong>settings</strong></a>(self, **kwargs)</dt><dd><tt>A&nbsp;context&nbsp;manager&nbsp;that&nbsp;temporarily&nbsp;sets&nbsp;a&nbsp;setting&nbsp;and&nbsp;reverts&nbsp;to&nbsp;the&nbsp;original&nbsp;value&nbsp;when&nbsp;exiting&nbsp;the&nbsp;context.</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="django.test.testcases.html#SimpleTestCase">django.test.testcases.SimpleTestCase</a>:<br>
+<dl><dt><strong>client_class</strong> = &lt;class 'django.test.client.Client'&gt;<dd><tt>A&nbsp;class&nbsp;that&nbsp;can&nbsp;act&nbsp;as&nbsp;a&nbsp;client&nbsp;for&nbsp;testing&nbsp;purposes.<br>
+&nbsp;<br>
+It&nbsp;allows&nbsp;the&nbsp;user&nbsp;to&nbsp;compose&nbsp;GET&nbsp;and&nbsp;POST&nbsp;requests,&nbsp;and<br>
+obtain&nbsp;the&nbsp;response&nbsp;that&nbsp;the&nbsp;server&nbsp;gave&nbsp;to&nbsp;those&nbsp;requests.<br>
+The&nbsp;server&nbsp;Response&nbsp;objects&nbsp;are&nbsp;annotated&nbsp;with&nbsp;the&nbsp;details<br>
+of&nbsp;the&nbsp;contexts&nbsp;and&nbsp;templates&nbsp;that&nbsp;were&nbsp;rendered&nbsp;during&nbsp;the<br>
+process&nbsp;of&nbsp;serving&nbsp;the&nbsp;request.<br>
+&nbsp;<br>
+Client&nbsp;objects&nbsp;are&nbsp;stateful&nbsp;-&nbsp;they&nbsp;will&nbsp;retain&nbsp;cookie&nbsp;(and<br>
+thus&nbsp;session)&nbsp;details&nbsp;for&nbsp;the&nbsp;lifetime&nbsp;of&nbsp;the&nbsp;Client&nbsp;instance.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;not&nbsp;intended&nbsp;as&nbsp;a&nbsp;replacement&nbsp;for&nbsp;Twill/Selenium&nbsp;or<br>
+the&nbsp;like&nbsp;-&nbsp;it&nbsp;is&nbsp;here&nbsp;to&nbsp;allow&nbsp;testing&nbsp;against&nbsp;the<br>
+contexts&nbsp;and&nbsp;templates&nbsp;produced&nbsp;by&nbsp;a&nbsp;view,&nbsp;rather&nbsp;than&nbsp;the<br>
+HTML&nbsp;rendered&nbsp;to&nbsp;the&nbsp;end-user.</tt></dl>
+
+<hr>
+Methods inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><a name="ViewTest-__eq__"><strong>__eq__</strong></a>(self, other)</dt></dl>
+
+<dl><dt><a name="ViewTest-__hash__"><strong>__hash__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ViewTest-__init__"><strong>__init__</strong></a>(self, methodName='runTest')</dt><dd><tt>Create&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;class&nbsp;that&nbsp;will&nbsp;use&nbsp;the&nbsp;named&nbsp;test<br>
+method&nbsp;when&nbsp;executed.&nbsp;Raises&nbsp;a&nbsp;ValueError&nbsp;if&nbsp;the&nbsp;instance&nbsp;does<br>
+not&nbsp;have&nbsp;a&nbsp;method&nbsp;with&nbsp;the&nbsp;specified&nbsp;name.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ViewTest-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ViewTest-addCleanup"><strong>addCleanup</strong></a>(self, function, *args, **kwargs)</dt><dd><tt>Add&nbsp;a&nbsp;function,&nbsp;with&nbsp;arguments,&nbsp;to&nbsp;be&nbsp;called&nbsp;when&nbsp;the&nbsp;test&nbsp;is<br>
+completed.&nbsp;Functions&nbsp;added&nbsp;are&nbsp;called&nbsp;on&nbsp;a&nbsp;LIFO&nbsp;basis&nbsp;and&nbsp;are<br>
+called&nbsp;after&nbsp;tearDown&nbsp;on&nbsp;test&nbsp;failure&nbsp;or&nbsp;success.<br>
+&nbsp;<br>
+Cleanup&nbsp;items&nbsp;are&nbsp;called&nbsp;even&nbsp;if&nbsp;setUp&nbsp;fails&nbsp;(unlike&nbsp;tearDown).</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-addTypeEqualityFunc"><strong>addTypeEqualityFunc</strong></a>(self, typeobj, function)</dt><dd><tt>Add&nbsp;a&nbsp;type&nbsp;specific&nbsp;assertEqual&nbsp;style&nbsp;function&nbsp;to&nbsp;compare&nbsp;a&nbsp;type.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;is&nbsp;for&nbsp;use&nbsp;by&nbsp;<a href="django.test.testcases.html#TestCase">TestCase</a>&nbsp;subclasses&nbsp;that&nbsp;need&nbsp;to&nbsp;register<br>
+their&nbsp;own&nbsp;type&nbsp;equality&nbsp;functions&nbsp;to&nbsp;provide&nbsp;nicer&nbsp;error&nbsp;messages.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;typeobj:&nbsp;The&nbsp;data&nbsp;type&nbsp;to&nbsp;call&nbsp;this&nbsp;function&nbsp;on&nbsp;when&nbsp;both&nbsp;values<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;of&nbsp;the&nbsp;same&nbsp;type&nbsp;in&nbsp;<a href="#ViewTest-assertEqual">assertEqual</a>().<br>
+&nbsp;&nbsp;&nbsp;&nbsp;function:&nbsp;The&nbsp;callable&nbsp;taking&nbsp;two&nbsp;arguments&nbsp;and&nbsp;an&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msg=&nbsp;argument&nbsp;that&nbsp;raises&nbsp;self.<strong>failureException</strong>&nbsp;with&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;useful&nbsp;error&nbsp;message&nbsp;when&nbsp;the&nbsp;two&nbsp;arguments&nbsp;are&nbsp;not&nbsp;equal.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertAlmostEqual"><strong>assertAlmostEqual</strong></a>(self, first, second, places=None, msg=None, delta=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero,&nbsp;or&nbsp;by&nbsp;comparing&nbsp;that&nbsp;the<br>
+between&nbsp;the&nbsp;two&nbsp;objects&nbsp;is&nbsp;more&nbsp;than&nbsp;the&nbsp;given&nbsp;delta.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;two&nbsp;objects&nbsp;compare&nbsp;equal&nbsp;then&nbsp;they&nbsp;will&nbsp;automatically<br>
+compare&nbsp;almost&nbsp;equal.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertAlmostEquals"><strong>assertAlmostEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-assertCountEqual"><strong>assertCountEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>An&nbsp;unordered&nbsp;sequence&nbsp;comparison&nbsp;asserting&nbsp;that&nbsp;the&nbsp;same&nbsp;elements,<br>
+regardless&nbsp;of&nbsp;order.&nbsp;&nbsp;If&nbsp;the&nbsp;same&nbsp;element&nbsp;occurs&nbsp;more&nbsp;than&nbsp;once,<br>
+it&nbsp;verifies&nbsp;that&nbsp;the&nbsp;elements&nbsp;occur&nbsp;the&nbsp;same&nbsp;number&nbsp;of&nbsp;times.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#ViewTest-assertEqual">assertEqual</a>(Counter(list(first)),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Counter(list(second)))<br>
+&nbsp;<br>
+&nbsp;Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;[0,&nbsp;1,&nbsp;1]&nbsp;and&nbsp;[1,&nbsp;0,&nbsp;1]&nbsp;compare&nbsp;equal.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;[0,&nbsp;0,&nbsp;1]&nbsp;and&nbsp;[0,&nbsp;1]&nbsp;compare&nbsp;unequal.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertDictContainsSubset"><strong>assertDictContainsSubset</strong></a>(self, subset, dictionary, msg=None)</dt><dd><tt>Checks&nbsp;whether&nbsp;dictionary&nbsp;is&nbsp;a&nbsp;superset&nbsp;of&nbsp;subset.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertDictEqual"><strong>assertDictEqual</strong></a>(self, d1, d2, msg=None)</dt></dl>
+
+<dl><dt><a name="ViewTest-assertEqual"><strong>assertEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;unequal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'=='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertEquals"><strong>assertEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-assertFalse"><strong>assertFalse</strong></a>(self, expr, msg=None)</dt><dd><tt>Check&nbsp;that&nbsp;the&nbsp;expression&nbsp;is&nbsp;false.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertGreater"><strong>assertGreater</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(a&nbsp;&gt;&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertGreaterEqual"><strong>assertGreaterEqual</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(a&nbsp;&gt;=&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertIn"><strong>assertIn</strong></a>(self, member, container, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(a&nbsp;in&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertIs"><strong>assertIs</strong></a>(self, expr1, expr2, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(a&nbsp;is&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertIsInstance"><strong>assertIsInstance</strong></a>(self, obj, cls, msg=None)</dt><dd><tt>Same&nbsp;as&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(isinstance(obj,&nbsp;cls)),&nbsp;with&nbsp;a&nbsp;nicer<br>
+default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertIsNone"><strong>assertIsNone</strong></a>(self, obj, msg=None)</dt><dd><tt>Same&nbsp;as&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(obj&nbsp;is&nbsp;None),&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertIsNot"><strong>assertIsNot</strong></a>(self, expr1, expr2, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(a&nbsp;is&nbsp;not&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertIsNotNone"><strong>assertIsNotNone</strong></a>(self, obj, msg=None)</dt><dd><tt>Included&nbsp;for&nbsp;symmetry&nbsp;with&nbsp;assertIsNone.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertLess"><strong>assertLess</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(a&nbsp;&lt;&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertLessEqual"><strong>assertLessEqual</strong></a>(self, a, b, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(a&nbsp;&lt;=&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertListEqual"><strong>assertListEqual</strong></a>(self, list1, list2, msg=None)</dt><dd><tt>A&nbsp;list-specific&nbsp;equality&nbsp;assertion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list1:&nbsp;The&nbsp;first&nbsp;list&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list2:&nbsp;The&nbsp;second&nbsp;list&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertLogs"><strong>assertLogs</strong></a>(self, logger=None, level=None)</dt><dd><tt>Fail&nbsp;unless&nbsp;a&nbsp;log&nbsp;message&nbsp;of&nbsp;level&nbsp;*level*&nbsp;or&nbsp;higher&nbsp;is&nbsp;emitted<br>
+on&nbsp;*logger_name*&nbsp;or&nbsp;its&nbsp;children.&nbsp;&nbsp;If&nbsp;omitted,&nbsp;*level*&nbsp;defaults&nbsp;to<br>
+INFO&nbsp;and&nbsp;*logger*&nbsp;defaults&nbsp;to&nbsp;the&nbsp;root&nbsp;logger.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;must&nbsp;be&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;manager,&nbsp;and&nbsp;will&nbsp;yield<br>
+a&nbsp;recording&nbsp;object&nbsp;with&nbsp;two&nbsp;attributes:&nbsp;`output`&nbsp;and&nbsp;`records`.<br>
+At&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;context&nbsp;manager,&nbsp;the&nbsp;`output`&nbsp;attribute&nbsp;will<br>
+be&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;matching&nbsp;formatted&nbsp;log&nbsp;messages&nbsp;and&nbsp;the<br>
+`records`&nbsp;attribute&nbsp;will&nbsp;be&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;corresponding&nbsp;LogRecord<br>
+objects.<br>
+&nbsp;<br>
+Example::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#ViewTest-assertLogs">assertLogs</a>('foo',&nbsp;level='INFO')&nbsp;as&nbsp;cm:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.getLogger('foo').info('first&nbsp;message')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logging.getLogger('foo.bar').error('second&nbsp;message')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#ViewTest-assertEqual">assertEqual</a>(cm.output,&nbsp;['INFO:foo:first&nbsp;message',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ERROR:foo.bar:second&nbsp;message'])</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertMultiLineEqual"><strong>assertMultiLineEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>Assert&nbsp;that&nbsp;two&nbsp;multi-line&nbsp;strings&nbsp;are&nbsp;equal.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertNotAlmostEqual"><strong>assertNotAlmostEqual</strong></a>(self, first, second, places=None, msg=None, delta=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;their<br>
+difference&nbsp;rounded&nbsp;to&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;decimal&nbsp;places<br>
+(default&nbsp;7)&nbsp;and&nbsp;comparing&nbsp;to&nbsp;zero,&nbsp;or&nbsp;by&nbsp;comparing&nbsp;that&nbsp;the<br>
+between&nbsp;the&nbsp;two&nbsp;objects&nbsp;is&nbsp;less&nbsp;than&nbsp;the&nbsp;given&nbsp;delta.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;decimal&nbsp;places&nbsp;(from&nbsp;zero)&nbsp;are&nbsp;usually&nbsp;not&nbsp;the&nbsp;same<br>
+as&nbsp;significant&nbsp;digits&nbsp;(measured&nbsp;from&nbsp;the&nbsp;most&nbsp;signficant&nbsp;digit).<br>
+&nbsp;<br>
+Objects&nbsp;that&nbsp;are&nbsp;equal&nbsp;automatically&nbsp;fail.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertNotAlmostEquals"><strong>assertNotAlmostEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-assertNotEqual"><strong>assertNotEqual</strong></a>(self, first, second, msg=None)</dt><dd><tt>Fail&nbsp;if&nbsp;the&nbsp;two&nbsp;objects&nbsp;are&nbsp;equal&nbsp;as&nbsp;determined&nbsp;by&nbsp;the&nbsp;'!='<br>
+operator.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertNotEquals"><strong>assertNotEquals</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-assertNotIn"><strong>assertNotIn</strong></a>(self, member, container, msg=None)</dt><dd><tt>Just&nbsp;like&nbsp;self.<a href="#ViewTest-assertTrue">assertTrue</a>(a&nbsp;not&nbsp;in&nbsp;b),&nbsp;but&nbsp;with&nbsp;a&nbsp;nicer&nbsp;default&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertNotIsInstance"><strong>assertNotIsInstance</strong></a>(self, obj, cls, msg=None)</dt><dd><tt>Included&nbsp;for&nbsp;symmetry&nbsp;with&nbsp;assertIsInstance.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertNotRegex"><strong>assertNotRegex</strong></a>(self, text, unexpected_regex, msg=None)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;if&nbsp;the&nbsp;text&nbsp;matches&nbsp;the&nbsp;regular&nbsp;expression.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertRaises"><strong>assertRaises</strong></a>(self, excClass, callableObj=None, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;an&nbsp;exception&nbsp;of&nbsp;class&nbsp;excClass&nbsp;is&nbsp;raised<br>
+by&nbsp;callableObj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;exception&nbsp;is<br>
+raised,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;caught,&nbsp;and&nbsp;the&nbsp;test&nbsp;case&nbsp;will&nbsp;be<br>
+deemed&nbsp;to&nbsp;have&nbsp;suffered&nbsp;an&nbsp;error,&nbsp;exactly&nbsp;as&nbsp;for&nbsp;an<br>
+unexpected&nbsp;exception.<br>
+&nbsp;<br>
+If&nbsp;called&nbsp;with&nbsp;callableObj&nbsp;omitted&nbsp;or&nbsp;None,&nbsp;will&nbsp;return&nbsp;a<br>
+context&nbsp;object&nbsp;used&nbsp;like&nbsp;this::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#ViewTest-assertRaises">assertRaises</a>(SomeException):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;<br>
+An&nbsp;optional&nbsp;keyword&nbsp;argument&nbsp;'msg'&nbsp;can&nbsp;be&nbsp;provided&nbsp;when&nbsp;assertRaises<br>
+is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;object.<br>
+&nbsp;<br>
+The&nbsp;context&nbsp;manager&nbsp;keeps&nbsp;a&nbsp;reference&nbsp;to&nbsp;the&nbsp;exception&nbsp;as<br>
+the&nbsp;'exception'&nbsp;attribute.&nbsp;This&nbsp;allows&nbsp;you&nbsp;to&nbsp;inspect&nbsp;the<br>
+exception&nbsp;after&nbsp;the&nbsp;assertion::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#ViewTest-assertRaises">assertRaises</a>(SomeException)&nbsp;as&nbsp;cm:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the_exception&nbsp;=&nbsp;cm.exception<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#ViewTest-assertEqual">assertEqual</a>(the_exception.error_code,&nbsp;3)</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertRaisesRegex"><strong>assertRaisesRegex</strong></a>(self, expected_exception, expected_regex, callable_obj=None, *args, **kwargs)</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;message&nbsp;in&nbsp;a&nbsp;raised&nbsp;exception&nbsp;matches&nbsp;a&nbsp;regex.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_exception:&nbsp;Exception&nbsp;class&nbsp;expected&nbsp;to&nbsp;be&nbsp;raised.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_regex:&nbsp;Regex&nbsp;(re&nbsp;pattern&nbsp;object&nbsp;or&nbsp;string)&nbsp;expected<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;error&nbsp;message.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable_obj:&nbsp;Function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;used&nbsp;in&nbsp;case&nbsp;of&nbsp;failure.&nbsp;Can&nbsp;only&nbsp;be&nbsp;used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when&nbsp;assertRaisesRegex&nbsp;is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;manager.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;Extra&nbsp;args.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Extra&nbsp;kwargs.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertRaisesRegexp"><strong>assertRaisesRegexp</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-assertRegex"><strong>assertRegex</strong></a>(self, text, expected_regex, msg=None)</dt><dd><tt>Fail&nbsp;the&nbsp;test&nbsp;unless&nbsp;the&nbsp;text&nbsp;matches&nbsp;the&nbsp;regular&nbsp;expression.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertRegexpMatches"><strong>assertRegexpMatches</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-assertSequenceEqual"><strong>assertSequenceEqual</strong></a>(self, seq1, seq2, msg=None, seq_type=None)</dt><dd><tt>An&nbsp;equality&nbsp;assertion&nbsp;for&nbsp;ordered&nbsp;sequences&nbsp;(like&nbsp;lists&nbsp;and&nbsp;tuples).<br>
+&nbsp;<br>
+For&nbsp;the&nbsp;purposes&nbsp;of&nbsp;this&nbsp;function,&nbsp;a&nbsp;valid&nbsp;ordered&nbsp;sequence&nbsp;type&nbsp;is&nbsp;one<br>
+which&nbsp;can&nbsp;be&nbsp;indexed,&nbsp;has&nbsp;a&nbsp;length,&nbsp;and&nbsp;has&nbsp;an&nbsp;equality&nbsp;operator.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq1:&nbsp;The&nbsp;first&nbsp;sequence&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq2:&nbsp;The&nbsp;second&nbsp;sequence&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seq_type:&nbsp;The&nbsp;expected&nbsp;datatype&nbsp;of&nbsp;the&nbsp;sequences,&nbsp;or&nbsp;None&nbsp;if&nbsp;no<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;datatype&nbsp;should&nbsp;be&nbsp;enforced.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertSetEqual"><strong>assertSetEqual</strong></a>(self, set1, set2, msg=None)</dt><dd><tt>A&nbsp;set-specific&nbsp;equality&nbsp;assertion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;set1:&nbsp;The&nbsp;first&nbsp;set&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;set2:&nbsp;The&nbsp;second&nbsp;set&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.<br>
+&nbsp;<br>
+assertSetEqual&nbsp;uses&nbsp;ducktyping&nbsp;to&nbsp;support&nbsp;different&nbsp;types&nbsp;of&nbsp;sets,&nbsp;and<br>
+is&nbsp;optimized&nbsp;for&nbsp;sets&nbsp;specifically&nbsp;(parameters&nbsp;must&nbsp;support&nbsp;a<br>
+difference&nbsp;method).</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertTrue"><strong>assertTrue</strong></a>(self, expr, msg=None)</dt><dd><tt>Check&nbsp;that&nbsp;the&nbsp;expression&nbsp;is&nbsp;true.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertTupleEqual"><strong>assertTupleEqual</strong></a>(self, tuple1, tuple2, msg=None)</dt><dd><tt>A&nbsp;tuple-specific&nbsp;equality&nbsp;assertion.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple1:&nbsp;The&nbsp;first&nbsp;tuple&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tuple2:&nbsp;The&nbsp;second&nbsp;tuple&nbsp;to&nbsp;compare.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;to&nbsp;use&nbsp;on&nbsp;failure&nbsp;instead&nbsp;of&nbsp;a&nbsp;list&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;differences.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertWarns"><strong>assertWarns</strong></a>(self, expected_warning, callable_obj=None, *args, **kwargs)</dt><dd><tt>Fail&nbsp;unless&nbsp;a&nbsp;warning&nbsp;of&nbsp;class&nbsp;warnClass&nbsp;is&nbsp;triggered<br>
+by&nbsp;callable_obj&nbsp;when&nbsp;invoked&nbsp;with&nbsp;arguments&nbsp;args&nbsp;and&nbsp;keyword<br>
+arguments&nbsp;kwargs.&nbsp;&nbsp;If&nbsp;a&nbsp;different&nbsp;type&nbsp;of&nbsp;warning&nbsp;is<br>
+triggered,&nbsp;it&nbsp;will&nbsp;not&nbsp;be&nbsp;handled:&nbsp;depending&nbsp;on&nbsp;the&nbsp;other<br>
+warning&nbsp;filtering&nbsp;rules&nbsp;in&nbsp;effect,&nbsp;it&nbsp;might&nbsp;be&nbsp;silenced,&nbsp;printed<br>
+out,&nbsp;or&nbsp;raised&nbsp;as&nbsp;an&nbsp;exception.<br>
+&nbsp;<br>
+If&nbsp;called&nbsp;with&nbsp;callable_obj&nbsp;omitted&nbsp;or&nbsp;None,&nbsp;will&nbsp;return&nbsp;a<br>
+context&nbsp;object&nbsp;used&nbsp;like&nbsp;this::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#ViewTest-assertWarns">assertWarns</a>(SomeWarning):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;<br>
+An&nbsp;optional&nbsp;keyword&nbsp;argument&nbsp;'msg'&nbsp;can&nbsp;be&nbsp;provided&nbsp;when&nbsp;assertWarns<br>
+is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;object.<br>
+&nbsp;<br>
+The&nbsp;context&nbsp;manager&nbsp;keeps&nbsp;a&nbsp;reference&nbsp;to&nbsp;the&nbsp;first&nbsp;matching<br>
+warning&nbsp;as&nbsp;the&nbsp;'warning'&nbsp;attribute;&nbsp;similarly,&nbsp;the&nbsp;'filename'<br>
+and&nbsp;'lineno'&nbsp;attributes&nbsp;give&nbsp;you&nbsp;information&nbsp;about&nbsp;the&nbsp;line<br>
+of&nbsp;Python&nbsp;code&nbsp;from&nbsp;which&nbsp;the&nbsp;warning&nbsp;was&nbsp;triggered.<br>
+This&nbsp;allows&nbsp;you&nbsp;to&nbsp;inspect&nbsp;the&nbsp;warning&nbsp;after&nbsp;the&nbsp;assertion::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;self.<a href="#ViewTest-assertWarns">assertWarns</a>(SomeWarning)&nbsp;as&nbsp;cm:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_something()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the_warning&nbsp;=&nbsp;cm.warning<br>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<a href="#ViewTest-assertEqual">assertEqual</a>(the_warning.some_attribute,&nbsp;147)</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assertWarnsRegex"><strong>assertWarnsRegex</strong></a>(self, expected_warning, expected_regex, callable_obj=None, *args, **kwargs)</dt><dd><tt>Asserts&nbsp;that&nbsp;the&nbsp;message&nbsp;in&nbsp;a&nbsp;triggered&nbsp;warning&nbsp;matches&nbsp;a&nbsp;regexp.<br>
+Basic&nbsp;functioning&nbsp;is&nbsp;similar&nbsp;to&nbsp;<a href="#ViewTest-assertWarns">assertWarns</a>()&nbsp;with&nbsp;the&nbsp;addition<br>
+that&nbsp;only&nbsp;warnings&nbsp;whose&nbsp;messages&nbsp;also&nbsp;match&nbsp;the&nbsp;regular&nbsp;expression<br>
+are&nbsp;considered&nbsp;successful&nbsp;matches.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_warning:&nbsp;Warning&nbsp;class&nbsp;expected&nbsp;to&nbsp;be&nbsp;triggered.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expected_regex:&nbsp;Regex&nbsp;(re&nbsp;pattern&nbsp;object&nbsp;or&nbsp;string)&nbsp;expected<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;error&nbsp;message.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable_obj:&nbsp;Function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;msg:&nbsp;Optional&nbsp;message&nbsp;used&nbsp;in&nbsp;case&nbsp;of&nbsp;failure.&nbsp;Can&nbsp;only&nbsp;be&nbsp;used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when&nbsp;assertWarnsRegex&nbsp;is&nbsp;used&nbsp;as&nbsp;a&nbsp;context&nbsp;manager.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;args:&nbsp;Extra&nbsp;args.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Extra&nbsp;kwargs.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-assert_"><strong>assert_</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-countTestCases"><strong>countTestCases</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ViewTest-debug"><strong>debug</strong></a>(self)</dt><dd><tt>Run&nbsp;the&nbsp;test&nbsp;without&nbsp;collecting&nbsp;errors&nbsp;in&nbsp;a&nbsp;TestResult</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-defaultTestResult"><strong>defaultTestResult</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ViewTest-doCleanups"><strong>doCleanups</strong></a>(self)</dt><dd><tt>Execute&nbsp;all&nbsp;cleanup&nbsp;functions.&nbsp;Normally&nbsp;called&nbsp;for&nbsp;you&nbsp;after<br>
+tearDown.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-fail"><strong>fail</strong></a>(self, msg=None)</dt><dd><tt>Fail&nbsp;immediately,&nbsp;with&nbsp;the&nbsp;given&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-failIf"><strong>failIf</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-failIfAlmostEqual"><strong>failIfAlmostEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-failIfEqual"><strong>failIfEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-failUnless"><strong>failUnless</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-failUnlessAlmostEqual"><strong>failUnlessAlmostEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-failUnlessEqual"><strong>failUnlessEqual</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-failUnlessRaises"><strong>failUnlessRaises</strong></a> = deprecated_func(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ViewTest-id"><strong>id</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ViewTest-run"><strong>run</strong></a>(self, result=None)</dt></dl>
+
+<dl><dt><a name="ViewTest-setUp"><strong>setUp</strong></a>(self)</dt><dd><tt>Hook&nbsp;method&nbsp;for&nbsp;setting&nbsp;up&nbsp;the&nbsp;test&nbsp;fixture&nbsp;before&nbsp;exercising&nbsp;it.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-shortDescription"><strong>shortDescription</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;one-line&nbsp;description&nbsp;of&nbsp;the&nbsp;test,&nbsp;or&nbsp;None&nbsp;if&nbsp;no<br>
+description&nbsp;has&nbsp;been&nbsp;provided.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;this&nbsp;method&nbsp;returns&nbsp;the&nbsp;first&nbsp;line&nbsp;of<br>
+the&nbsp;specified&nbsp;test&nbsp;method's&nbsp;docstring.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-skipTest"><strong>skipTest</strong></a>(self, reason)</dt><dd><tt>Skip&nbsp;this&nbsp;test.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-subTest"><strong>subTest</strong></a>(self, msg=None, **params)</dt><dd><tt>Return&nbsp;a&nbsp;context&nbsp;manager&nbsp;that&nbsp;will&nbsp;return&nbsp;the&nbsp;enclosed&nbsp;block<br>
+of&nbsp;code&nbsp;in&nbsp;a&nbsp;subtest&nbsp;identified&nbsp;by&nbsp;the&nbsp;optional&nbsp;message&nbsp;and<br>
+keyword&nbsp;parameters.&nbsp;&nbsp;A&nbsp;failure&nbsp;in&nbsp;the&nbsp;subtest&nbsp;marks&nbsp;the&nbsp;test<br>
+case&nbsp;as&nbsp;failed&nbsp;but&nbsp;resumes&nbsp;execution&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;enclosed<br>
+block,&nbsp;allowing&nbsp;further&nbsp;test&nbsp;code&nbsp;to&nbsp;be&nbsp;executed.</tt></dd></dl>
+
+<dl><dt><a name="ViewTest-tearDown"><strong>tearDown</strong></a>(self)</dt><dd><tt>Hook&nbsp;method&nbsp;for&nbsp;deconstructing&nbsp;the&nbsp;test&nbsp;fixture&nbsp;after&nbsp;testing&nbsp;it.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><a name="ViewTest-tearDownClass"><strong>tearDownClass</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Hook&nbsp;method&nbsp;for&nbsp;deconstructing&nbsp;the&nbsp;class&nbsp;fixture&nbsp;after&nbsp;running&nbsp;all&nbsp;tests&nbsp;in&nbsp;the&nbsp;class.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="unittest.case.html#TestCase">unittest.case.TestCase</a>:<br>
+<dl><dt><strong>failureException</strong> = &lt;class 'AssertionError'&gt;<dd><tt>Assertion&nbsp;failed.</tt></dl>
+
+<dl><dt><strong>longMessage</strong> = True</dl>
+
+<dl><dt><strong>maxDiff</strong> = 640</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
