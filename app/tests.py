@@ -1,6 +1,6 @@
 """
-This file demonstrates writing tests using the unittest module. These will pass
-when you run "manage.py test".
+This is unit tests. 
+All hardcoded counts calcualte based on test data.
 """
 
 import django
@@ -23,7 +23,11 @@ class ViewTest(TestCase):
         self.assertContains(response, 'SF Movies', 3, 200)      
 
 class SearchFormTest(TestCase):
-    """Tests for the search."""
+    """
+    Tests for the search. 
+    All magic numbers are calculated as N = (number of search result) * 2 + 1. 
+    As titles appear twice on marker and one comes from search form
+    """
 
     EMPTY_SEARCH_QUERY = {
         'query': '',
@@ -52,15 +56,15 @@ class SearchFormTest(TestCase):
         q = self.EMPTY_SEARCH_QUERY.copy()
         q['title'] = 'Need For Speed'
         response = self.client.post('/', q)
-        self.assertContains(response, 'Need For Speed', count=5, status_code=200)
+        self.assertContains(response, 'Need For Speed', count=9, status_code=200)
 
     def test_search_by_year(self):
         """Tests search by title."""
         q = self.EMPTY_SEARCH_QUERY.copy()
         q['year'] = '1973'
         response = self.client.post('/', q)
-        self.assertContains(response, 'Magnum Force', count=12, status_code=200)
-        self.assertContains(response, 'American Graffiti', count=1, status_code=200)
+        self.assertContains(response, 'Magnum Force', count=24, status_code=200)
+        self.assertContains(response, 'American Graffiti', count=2, status_code=200)
 
     def test_search_by_address_without_distance(self):
         """Tests search by title."""
@@ -75,7 +79,7 @@ class SearchFormTest(TestCase):
         q['query'] = '60 Spear Street'
         q['distance'] = 3.0
         response = self.client.post('/', q)
-        self.assertContains(response, 'Nine Months', count=1, status_code=200)
+        self.assertContains(response, 'Nine Months', count=2, status_code=200)
         
 class AutoCompleteTest(TestCase):
     """Tests for autocomplete."""

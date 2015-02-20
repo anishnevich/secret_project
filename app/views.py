@@ -12,6 +12,10 @@ from app import search_helper
 import json
 
 def autocomplete(request):
+    """
+    Return json data for generic autocomplete.
+    Works for all search form fields.
+    """
     field = request.REQUEST['field']
     kwargs = {    
         '{0}__{1}'.format(field, 'startswith'): request.REQUEST['search'],    
@@ -26,6 +30,9 @@ def autocomplete(request):
     return HttpResponse(resp, content_type='application/json')
     
 def address_search(request):
+    """
+    one form to rule them all.
+    """
     assert isinstance(request, HttpRequest)
     form = SearchForm()
     if request.method == 'POST':

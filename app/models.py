@@ -6,6 +6,9 @@ Definition of models.
 from django.db import models
 
 class MovieLocation(models.Model):
+    """
+    Representation of movie location with additional information.
+    """
     title               = models.CharField(max_length = 200, blank=False)
     release_year        = models.IntegerField(blank=False)
     locations           = models.CharField(max_length = 200, blank=False)
@@ -24,6 +27,9 @@ class MovieLocation(models.Model):
         return "Id: {2} Title: {0} Year: {1} ".format(self.title, self.release_year, self.id)
         
 class MovieLocationSearchResult:
+    """
+    Movie location with distance relative to search query
+    """
     def __init__(self, movie_location, distance):
         self.movie_location = movie_location
         self.distance = distance
@@ -32,6 +38,9 @@ class MovieLocationSearchResult:
         return "MovieLocation: {0} . Distance: {1}".format(self.movie_location, self.distance)
 
 class SearchSettings:
+    """
+    Helper class to transform data from form to search query
+    """
     DEFAULT_SEARCH_QUERY = ".*"
 
     def __init__(self, query_location = '', distance = '', title = '', release_year = '', production_company = '', distributor = '', director = '', writer = '', actor = ''):
