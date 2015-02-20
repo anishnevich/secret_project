@@ -45,16 +45,14 @@ def address_search(request):
     assert isinstance(request, HttpRequest)
     form = SearchForm()
     if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
         form = SearchForm(request.POST)
-        # check whether it's valid:
         if (form.is_valid()):
             try:
                 search_settings = SearchSettings.fromform(form)
             except:
                 return HttpResponse('Bad search form', status=400)
-            m = search_helper.search_helper()
-            locations = m.get_filtered_locations(search_settings)   
+            searcher = search_helper.search_helper()
+            locations = searcher.get_filtered_locations(search_settings)   
             if not locations:
                 form.errors['__all__'] = form.error_class(["No locations found"])
             return render(
@@ -62,8 +60,6 @@ def address_search(request):
                 'app/search_bar.html', 
                 {
                     'form': form,
-                        #'address': query,
-                    #'locations': [str(location) for location in locations], 
                     'locations': locations,
                 })
             
