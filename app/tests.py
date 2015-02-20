@@ -40,14 +40,14 @@ class SearchFormTest(TestCase):
         """Tests search by title."""
         response = self.client.post('/', {'query': '','distance': '','year': '', 'title': 'Need For Speed', 
         'production_company':'','distributor':'','director':'','writer':''})
-        self.assertContains(response, 'Need For Speed', count=9, status_code=200)
+        self.assertContains(response, 'Need For Speed', count=5, status_code=200)
 
     def test_search_by_year(self):
         """Tests search by title."""
         response = self.client.post('/', {'query': '','distance': '','year': '1973', 'title': '', 
         'production_company':'','distributor':'','director':'','writer':''})
-        self.assertContains(response, 'Magnum Force', count=9, status_code=200)
-        self.assertContains(response, 'American Graffiti ', count=9, status_code=200)
+        self.assertContains(response, 'Magnum Force', count=12, status_code=200)
+        self.assertContains(response, 'American Graffiti', count=1, status_code=200)
         
 class AutoCompleteTest(TestCase):
     """Tests for autocomplete."""
@@ -77,8 +77,14 @@ class AutoCompleteTest(TestCase):
         
     def test_distributor_autocompletion(self):
         """Tests autocompletion for distributor."""
-        response = self.client.post('/search.json/', {'field': 'distributor', 'search' : 'HBO'})
-        self.assertContains(response, 'Home Box Office (HBO)', count=1, status_code=200)
+        response = self.client.post('/search.json/', {'field': 'distributor', 'search' : 'NA'})
+        self.assertContains(response, 'NA', count=2, status_code=200)
+
+    def test_distributor_autocompletion_empty_result(self):
+        """Tests autocompletion for distributor."""
+        response = self.client.post('/search.json/', {'field': 'distributor', 'search' : 'XXX'})
+        self.assertEquals(response.status_code, 200)
+        self.assertEquals(len(response.content), 2) # '[]'
 
     def test_director_autocompletion(self):
         """Tests autocompletion for director."""

@@ -35,9 +35,6 @@
     <Compile Include="app\admin.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="app\datamanager.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="app\search_helper.py">
       <SubType>Code</SubType>
     </Compile>

@@ -26,7 +26,7 @@ def data_import(request):
         context = {"form": form}
         return render(request, "app/data_import.html", context) 
 
-def autocompleteModel(request):
+def autocomplete(request):
     field = request.REQUEST['field']
     kwargs = {    
         '{0}__{1}'.format(field, 'startswith'): request.REQUEST['search'],    
