@@ -27,6 +27,14 @@
         initialize();
     }
 
+    function getContent(title, year, fun_facts){
+       return '<div id="content"><div id="siteNotice"></div><h1 id="firstHeading" class="firstHeading">' + title +
+              '</h1><div id="bodyContent">'+
+              '<p><b>Year:</b>'+ year +
+		      '<p><b>Fun facts:</b>'+ fun_facts +   
+			  '</div></div>';
+    }
+
     function addMarker(map, name, latlng){
         var infoWin = new google.maps.InfoWindow({content: name});
         var marker = new google.maps.Marker({
@@ -54,7 +62,8 @@
         var position;
         {% for location in locations %}
            position = new google.maps.LatLng({{ location.latitude }}, {{ location.longitude }})
-           addMarker(map, "{{location.title}}", position)
+           content = getContent("{{location.title}}", "{{location.release_year}}", "{{location.fun_facts}}")
+           addMarker(map, content, position)
 
            map.center = position
         {% endfor %}     
