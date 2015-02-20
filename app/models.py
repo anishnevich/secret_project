@@ -54,6 +54,7 @@ class SearchSettings:
             '{0}__{1}'.format('director', 'regex'): director if director != '' else SearchSettings.DEFAULT_SEARCH_QUERY,
             '{0}__{1}'.format('writer', 'regex'):  writer if writer != '' else SearchSettings.DEFAULT_SEARCH_QUERY
         }
+        self.actor = actor
 
     @classmethod
     def fromform(cls, form):
@@ -65,4 +66,5 @@ class SearchSettings:
         distributor = form.data['distributor']
         director = form.data['director']
         writer = form.data['writer']
-        return cls(query, distance, title, release_year, production_company, distributor, director, writer)
+        actor = form.data['actor']
+        return cls(query, distance, title, release_year, production_company, distributor, director, writer, actor)

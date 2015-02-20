@@ -18,8 +18,9 @@
     
 <tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="django.db.models.html">django.db.models</a><br>
+</td><td width="25%" valign=top><a href="operator.html">operator</a><br>
 </td><td width="25%" valign=top><a href="re.html">re</a><br>
-</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ee77aa">
 <td colspan=3 valign=bottom>&nbsp;<br>
@@ -44,7 +45,9 @@
 <td colspan=2><tt>get&nbsp;movies&nbsp;locations&nbsp;by&nbsp;address&nbsp;and&nbsp;other&nbsp;fields<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
-<dl><dt><a name="search_helper-filter_by_not_address_filed"><strong>filter_by_not_address_filed</strong></a>(self, kwargs)</dt><dd><tt>search&nbsp;movies&nbsp;location&nbsp;by&nbsp;any&nbsp;field&nbsp;except&nbsp;address</tt></dd></dl>
+<dl><dt><a name="search_helper-filter_by_actor"><strong>filter_by_actor</strong></a>(self, search_query)</dt><dd><tt>create&nbsp;search&nbsp;args&nbsp;for&nbsp;actor&nbsp;field</tt></dd></dl>
+
+<dl><dt><a name="search_helper-filter_for_autocomplete"><strong>filter_for_autocomplete</strong></a>(self, request)</dt><dd><tt>search&nbsp;movies&nbsp;location&nbsp;by&nbsp;any&nbsp;field&nbsp;except&nbsp;address</tt></dd></dl>
 
 <dl><dt><a name="search_helper-get_coordinates"><strong>get_coordinates</strong></a>(self, address_query)</dt><dd><tt>get&nbsp;coordinates&nbsp;by&nbsp;address</tt></dd></dl>
 
@@ -64,5 +67,20 @@ Data descriptors defined here:<br>
 Data and other attributes defined here:<br>
 <dl><dt><strong>DEFAULT_LOCATIONS_NUMBER</strong> = 15</dl>
 
-</td></tr></table></td></tr></table>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-reduce"><strong>reduce</strong></a>(...)</dt><dd><tt><a href="#-reduce">reduce</a>(function,&nbsp;sequence[,&nbsp;initial])&nbsp;-&gt;&nbsp;value<br>
+&nbsp;<br>
+Apply&nbsp;a&nbsp;function&nbsp;of&nbsp;two&nbsp;arguments&nbsp;cumulatively&nbsp;to&nbsp;the&nbsp;items&nbsp;of&nbsp;a&nbsp;sequence,<br>
+from&nbsp;left&nbsp;to&nbsp;right,&nbsp;so&nbsp;as&nbsp;to&nbsp;reduce&nbsp;the&nbsp;sequence&nbsp;to&nbsp;a&nbsp;single&nbsp;value.<br>
+For&nbsp;example,&nbsp;<a href="#-reduce">reduce</a>(lambda&nbsp;x,&nbsp;y:&nbsp;x+y,&nbsp;[1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5])&nbsp;calculates<br>
+((((1+2)+3)+4)+5).&nbsp;&nbsp;If&nbsp;initial&nbsp;is&nbsp;present,&nbsp;it&nbsp;is&nbsp;placed&nbsp;before&nbsp;the&nbsp;items<br>
+of&nbsp;the&nbsp;sequence&nbsp;in&nbsp;the&nbsp;calculation,&nbsp;and&nbsp;serves&nbsp;as&nbsp;a&nbsp;default&nbsp;when&nbsp;the<br>
+sequence&nbsp;is&nbsp;empty.</tt></dd></dl>
+</td></tr></table>
 </body></html>

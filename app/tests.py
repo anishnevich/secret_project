@@ -25,8 +25,8 @@ class ViewTest(TestCase):
 class SearchFormTest(TestCase):
     """
     Tests for the search. 
-    All magic numbers are calculated as N = (number of search result) * 2 + 1. 
-    As titles appear twice on marker and one comes from search form
+    All magic numbers are calculated as N = (number of search result) * 2 (+ 1). +1 only in search by title. 
+    As titles appear twice on marker and one comes from search form, if we search by title
     """
 
     EMPTY_SEARCH_QUERY = {
@@ -37,7 +37,8 @@ class SearchFormTest(TestCase):
         'production_company':'',
         'distributor':'',
         'director':'',
-        'writer':''
+        'writer':'',
+        'actor': ''
     }
 
     if django.VERSION[:2] >= (1, 7):
@@ -80,7 +81,30 @@ class SearchFormTest(TestCase):
         q['distance'] = 3.0
         response = self.client.post('/', q)
         self.assertContains(response, 'Nine Months', count=2, status_code=200)
-        
+
+    def test_search_by_actor_3(self):
+        """Tests search by actor specified in actor_3 field."""
+        q = self.EMPTY_SEARCH_QUERY.copy()
+        q['actor'] = 'Michael Keaton'
+        response = self.client.post('/', q)
+        self.assertContains(response, 'My Reality', count=4, status_code=200)
+
+    def test_search_by_actor_2(self):
+        """Tests search by actor specified in actor_3 field."""
+        q = self.EMPTY_SEARCH_QUERY.copy()
+        q['actor'] = 'Sharon Stone'
+        response = self.client.post('/', q)
+        self.assertContains(response, 'Basic Instinct', count=12, status_code=200)
+        self.assertContains(response, 'Sphere', count=2, status_code=200)
+
+    def test_search_by_actor_1_and_2(self):
+        """Tests search by actor specified in actor_3 field."""
+        q = self.EMPTY_SEARCH_QUERY.copy()
+        q['actor'] = 'Dustin Hoffman'
+        response = self.client.post('/', q)
+        self.assertContains(response, 'The Graduate', count=2, status_code=200)
+        self.assertContains(response, 'Sphere', count=2, status_code=200)
+
 class AutoCompleteTest(TestCase):
     """Tests for autocomplete."""
         
@@ -129,3 +153,10 @@ class AutoCompleteTest(TestCase):
         response = self.client.post('/search.json/', {'field': 'writer', 'search' : 'Mi'})
         self.assertContains(response, 'Michael Lannan', count=1, status_code=200)
         self.assertContains(response, 'Mitchell Kapner', count=1, status_code=200)
+        
+    def test_actor_autocompletion(self):
+        """Tests autocompletion for actor. Check that we grab data from all three actors fields"""
+        response = self.client.post('/search.json/', {'field': 'actor', 'search' : 'Sam'})
+        self.assertContains(response, 'Samuel L. Jackson', count=1, status_code=200)
+        self.assertContains(response, 'Sam Elliot', count=1, status_code=200)
+        self.assertContains(response, 'Sam Shepard', count=1, status_code=200)

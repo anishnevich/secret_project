@@ -17,15 +17,12 @@ def autocomplete(request):
     Works for all search form fields.
     """
     field = request.REQUEST['field']
-    kwargs = {    
-        '{0}__{1}'.format(field, 'startswith'): request.REQUEST['search'],    
-    }
+    #kwargs = {    
+    #    '{0}__{1}'.format(field, 'startswith'): request.REQUEST['search'],    
+    #}
 
     searcher = search_helper.search_helper()
-    search_qs = searcher.filter_by_not_address_filed(kwargs)
-    results = set()
-    for r in search_qs:
-        results.add(getattr(r, field))
+    results = searcher.filter_for_autocomplete(request)
     resp = json.dumps(list(results))
     return HttpResponse(resp, content_type='application/json')
     
