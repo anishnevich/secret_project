@@ -22,8 +22,7 @@ class MovieLocation(models.Model):
 
     def __str__(self):
         return "Id: {2} Title: {0} Year: {1} ".format(self.title, self.release_year, self.id)
-
-
+        
 class MovieLocationSearchResult:
     def __init__(self, movie_location, distance):
         self.movie_location = movie_location

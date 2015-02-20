@@ -26,6 +26,19 @@
         document.getElementById('map-canvas').style.display = "block";
         initialize();
     }
+
+    function addMarker(map, name, latlng){
+        var infoWin = new google.maps.InfoWindow({content: name});
+        var marker = new google.maps.Marker({
+            map: map,
+            position: latlng,
+            title: name
+         });
+        google.maps.event.addListener(marker, 'click', function(){
+           infoWin.open(map, marker);
+        });
+    }
+
     function initialize() {
         // create the map
 
@@ -34,19 +47,20 @@
             center: new google.maps.LatLng(37.76893497, -122.42284884),
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
+
         map = new google.maps.Map(document.getElementById("map-canvas"),
                                     myOptions);
+        
         var position;
         {% for location in locations %}
-        position = new google.maps.LatLng({{ location.latitude }}, {{ location.longitude }})
-        new google.maps.Marker({
-            position: position,
-            map: map,
-            title: "{{ location.title }}"
-        });
-        map.center = position
-        {% endfor %}
+           position = new google.maps.LatLng({{ location.latitude }}, {{ location.longitude }})
+           addMarker(map, "{{location.title}}", position)
+
+           map.center = position
+        {% endfor %}     
     }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
 
     displayMap();
 </script>
