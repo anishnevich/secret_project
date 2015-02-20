@@ -7,30 +7,51 @@
     width: 100%;
 }
 #map-canvas { width: 100%; height: 50%; padding: 0; }
+
+label {
+    width: 150pt;
+}
 </style>
 
 <form action="" method="post">
     {% csrf_token %}
-    <label for="query">Address: </label>
-    {{ form.query }}
-    <label for="distance">Max distance: </label>
-    {{ form.distance }}
-    <label for="title">Title: </label>
-    {{ form.title }}
-    <label for="year">Release year: </label>
-    {{ form.year }}
-    <label for="production_company">Production Company: </label>
-    {{ form.production_company }}
-    <label for="distributor">Distributor: </label>
-    {{ form.distributor }}
-    <label for="director">Director: </label>
-    {{ form.director }}
-    <label for="writer">Writer: </label>
-    {{ form.writer }}
-    <br>
-    <label for="actor">Actor: </label>
-    {{ form.actor }}
-    <input type="submit" value="Search">
+    <ul>
+        <li>
+            <label for="query">Address: </label>
+            {{ form.query }}
+            <label for="distance">Max distance: </label>
+            {{ form.distance }}
+        </li>
+        <li>
+            <label for="title">Title: </label>
+            {{ form.title }}
+        </li>
+        <li>
+            <label for="year">Release year: </label>
+            {{ form.year }}
+        </li>
+        <li>
+            <label for="production_company">Production Company: </label>
+            {{ form.production_company }}
+        </li>
+        <li>
+            <label for="distributor">Distributor: </label>
+            {{ form.distributor }}
+        </li>
+        <li>
+            <label for="director">Director: </label>
+            {{ form.director }}
+        </li>
+        <li>
+            <label for="writer">Writer: </label>
+            {{ form.writer }}
+        </li>
+        <li>
+            <label for="actor">Actor: </label>
+            {{ form.actor }}
+        </li>
+        <input type="submit" value="Search">
+    </ul>
 </form>
 
 {% if form.errors %}
