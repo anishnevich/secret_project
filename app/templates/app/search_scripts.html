@@ -35,8 +35,8 @@
 			  '</div></div>';
     }
 
-    function addMarker(map, name, latlng){
-        var infoWin = new google.maps.InfoWindow({content: name});
+    function addMarker(map, name, content, latlng){
+        var infoWin = new google.maps.InfoWindow({content: content});
         var marker = new google.maps.Marker({
             map: map,
             position: latlng,
@@ -63,13 +63,11 @@
         {% for location in locations %}
            position = new google.maps.LatLng({{ location.latitude }}, {{ location.longitude }})
            content = getContent("{{location.title}}", "{{location.release_year}}", "{{location.fun_facts}}")
-           addMarker(map, content, position)
+           addMarker(map, "{{location.title}}", content, position)
 
            map.center = position
         {% endfor %}     
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
-
-    displayMap();
 </script>

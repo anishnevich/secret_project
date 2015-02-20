@@ -41,16 +41,3 @@ class BootstrapAuthenticationForm(AuthenticationForm):
                                    'class': 'form-control',
                                    'placeholder':'Password'}))
 
-class DataInput(forms.Form):
-    file = forms.FileField()
-    bla = forms.TextInput()
-
-    def save(self):
-        records = csv.reader(self.cleaned_data["file"])
-        for line in records:
-            l = MovieLocation()
-            l.title = "foo"
-            l.release_year = 2011
-            l.locations = "here"
-            l.save()
-

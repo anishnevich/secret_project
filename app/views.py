@@ -3,28 +3,13 @@ Definition of views.
 """
 
 from django.http import HttpResponse, HttpResponseRedirect, HttpRequest
-from app.forms import SearchForm, DataInput
+from app.forms import SearchForm
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from datetime import datetime
 from app.models import SearchSettings
-from django.contrib.admin.views.decorators import staff_member_required
 from app import search_helper
 import json
-
-@staff_member_required
-def data_import(request):
-    if request.method == "POST":
-        form = DataInput(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            success = True
-            context = {"form": form, "success": success}
-            return render(request, "app/data_import.html", context)
-    else:
-        form = DataInput()        
-        context = {"form": form}
-        return render(request, "app/data_import.html", context) 
 
 def autocomplete(request):
     field = request.REQUEST['field']
@@ -39,7 +24,6 @@ def autocomplete(request):
         results.add(getattr(r, field))
     resp = json.dumps(list(results))
     return HttpResponse(resp, content_type='application/json')
-
     
 def address_search(request):
     assert isinstance(request, HttpRequest)

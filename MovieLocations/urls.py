@@ -14,7 +14,6 @@ urlpatterns = patterns('',
     url(r'^$', views.address_search, name='address_search'),
     url(r'^about', 'app.views.about', name='about'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^admin/dataimport/$', 'app.views.data_import'),
     url(r'^search.json/', views.autocomplete),
 
     url(r'^login/$',
